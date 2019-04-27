@@ -28,6 +28,8 @@ This plugin needs PHP5.6 or higher.
 
 == Screenshots ==
 
+1. Behavior
+
 == Upgrade Notice ==
 
 == Changelog ==
