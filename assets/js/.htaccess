@@ -1,0 +1,7 @@
+Order Deny,Allow
+Deny from all
+
+#allow access to assets
+<Files index.js>
+    Allow from all
+</Files>
