@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Hide blocks temporarily
+Plugin Name: Hide Blocks Temporarily
 Plugin URI:
 Description: This plugin makes it easy to hides blocks temporarily.
 Author: Technote

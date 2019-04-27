@@ -1,4 +1,4 @@
-=== Hide blocks temporarily ===
+=== Hide Blocks Temporarily ===
 Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.1
