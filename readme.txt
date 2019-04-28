@@ -1,10 +1,10 @@
-=== Hide blocks temporarily ===
+=== Hide Blocks Temporarily ===
 Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.1
 Requires PHP: 5.6
 Tested up to: 5.2
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,9 @@ This plugin needs PHP5.6 or higher.
 == Frequently asked questions ==
 
 == Screenshots ==
+
+1. Switch hidden style
+2. Remove all hide styles
 
 == Upgrade Notice ==
 

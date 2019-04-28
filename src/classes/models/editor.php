@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 0.0.1
+ * @version 0.0.2
  * @author Technote
  * @since 0.0.1
  * @copyright Technote All Rights Reserved
@@ -49,13 +49,21 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 		$this->enqueue_script( 'hide-blocks-temporarily', 'index.js', [
 			'wp-hooks',
 			'wp-blocks',
+			'wp-compose',
+			'wp-element',
+			'wp-editor',
+			'wp-components',
+			'wp-edit-post',
+			'wp-data',
 			'wp-i18n',
 			'lodash',
 		], $this->app->get_plugin_version(), false );
 		$this->localize_script( 'hide-blocks-temporarily', 'hbt_params', [
-			'translate' => [
-				'Hidden' => $this->translate( 'Hidden' ),
-			],
+			'plugin_icon' => $this->get_img_url( 'icon-24x24.png' ),
+			'translate'   => $this->get_translate_data( [
+				'Hidden',
+				'Remove All Hide Styles',
+			] ),
 		] );
 		$this->enqueue_style( 'hide-blocks-temporarily', 'gutenberg.css' );
 	}
