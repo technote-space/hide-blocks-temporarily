@@ -2,7 +2,7 @@
 /**
  * WP_Framework_Presenter Traits Presenter
  *
- * @version 0.0.19
+ * @version 0.0.20
  * @author Technote
  * @copyright Technote All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
@@ -840,6 +840,17 @@ trait Presenter {
 				'after'
 			);
 		}
+	}
+
+	/**
+	 * @param array $target
+	 *
+	 * @return array
+	 */
+	protected function get_translate_data( array $target ) {
+		return $this->app->array->map( $this->app->array->combine( $target, null ), function ( $value ) {
+			return $this->translate( $value );
+		} );
 	}
 
 	/**
