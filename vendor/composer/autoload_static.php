@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInitaa14cbfe7eedee868a04dd40c74fd1b4
 {
     public static $files = array (
-        '89ff252b349d4d088742a09c25f5dd74' => __DIR__ . '/..' . '/yahnis-elsts/plugin-update-checker/plugin-update-checker.php',
         'cbd6bada88b6bca5d1b8b1b5733f514e' => __DIR__ . '/..' . '/wp-content-framework/core/autoload.php',
     );
 
