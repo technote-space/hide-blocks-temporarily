@@ -16,7 +16,7 @@ const webpackConfig = {
 	entry: './index.js',
 	output: {
 		path: __dirname,
-		filename: 'index.js',
+		filename: 'index.min.js',
 	},
 	module: {
 		rules: [

@@ -2,6 +2,6 @@ Order Deny,Allow
 Deny from all
 
 #allow access to assets
-<Files index.js>
+<Files index.min.js>
     Allow from all
 </Files>

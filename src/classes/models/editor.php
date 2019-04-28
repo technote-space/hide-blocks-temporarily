@@ -46,7 +46,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 */
 	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function enqueue_block_editor_assets() {
-		$this->enqueue_script( 'hide-blocks-temporarily', 'index.js', [
+		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', [
 			'wp-hooks',
 			'wp-blocks',
 			'wp-compose',
