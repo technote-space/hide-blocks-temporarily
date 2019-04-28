@@ -1,6 +1,6 @@
 {
   "name": "hide-blocks-temporarily",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
