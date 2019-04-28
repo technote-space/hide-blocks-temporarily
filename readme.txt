@@ -28,7 +28,8 @@ This plugin needs PHP5.6 or higher.
 
 == Screenshots ==
 
-1. Behavior
+1. Switch hidden style
+2. Remove all hide styles
 
 == Upgrade Notice ==
 

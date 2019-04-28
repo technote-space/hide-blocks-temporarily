@@ -22,10 +22,15 @@
 3. プラグインを有効化 
 
 ## 使用方法
+### 非表示かどうかの切り替え
 1. 非表示にしたいブロックを選択  
 ![Select block](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/select-block.png)  
 2. サイドバーの『スタイル』から『非表示』を選択  
 ![Sidebar](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/sidebar.png)
+### 全ての非表示を解除
+1. 右上の三点リーダーをクリック  
+2. 『全ての非表示を解除』を選択  
+![Remove All Hide Styles](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-2.png)
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
