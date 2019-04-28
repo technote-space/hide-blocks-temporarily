@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hide-blocks-temporarily\n"
 "POT-Creation-Date: 2018-07-01 17:47+0900\n"
-"PO-Revision-Date: 2019-04-28 04:29+0900\n"
+"PO-Revision-Date: 2019-04-28 18:22+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -24,3 +24,6 @@ msgstr "このプラグインはブロックを一時的に隠すのを容易に
 
 msgid "Hidden"
 msgstr "非表示"
+
+msgid "Remove All Hide Styles"
+msgstr "全ての非表示を解除"
