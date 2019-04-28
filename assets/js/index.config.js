@@ -27,9 +27,6 @@ const webpackConfig = {
 			},
 		],
 	},
-	externals: {
-		lodash: 'lodash',
-	},
 	plugins: [
 		new webpack.BannerPlugin( banner ),
 	],
