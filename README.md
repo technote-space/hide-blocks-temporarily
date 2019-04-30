@@ -8,6 +8,8 @@
 
 一時的にブロックを隠すプラグインです。
 
+[WordPress公式ディレクトリ](https://wordpress.org/plugins/hide-blocks-temporarily/)
+
 ## スクリーンショット
 ### 動作
 ![Behavior](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-1.gif)
@@ -17,9 +19,10 @@
 - WordPress 5.1 以上
 
 ## 導入手順
-1. [ZIPをダウンロード](https://github.com/technote-space/hide-blocks-temporarily/archive/master.zip)
-2. wp-content/plugins に展開
-3. プラグインを有効化 
+1. 管理画面のプラグインから「新規追加」  
+![手順1](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/add.png)  
+2. 「Hide Blocks Temporarily」で検索し「今すぐインストール」を押下  
+3. 「有効化」  
 
 ## 使用方法
 ### 非表示にする
