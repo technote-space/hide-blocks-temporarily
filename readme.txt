@@ -35,7 +35,7 @@ This plugin needs PHP5.6 or higher.
 
 == Changelog ==
 
-= 1.0.0 (2019/x/y) =
+= 1.0.0 (2019/4/30) =
 
 * First release
 
