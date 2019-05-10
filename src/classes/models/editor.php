@@ -58,7 +58,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 			'wp-i18n',
 			'lodash',
 		], $this->app->get_plugin_version(), false );
-		$this->localize_script( 'hide-blocks-temporarily', 'hbt_params', [
+		$this->localize_script( 'hide-blocks-temporarily', 'hbtParams', [
 			'plugin_icon' => $this->get_img_url( 'icon-24x24.png' ),
 			'translate'   => $this->get_translate_data( [
 				'Hidden',
