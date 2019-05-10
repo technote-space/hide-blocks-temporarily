@@ -4,7 +4,7 @@
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
     "test": "npm run lint && npm run cover",
-    "lint": "eslint src/**/**/*.js",
+    "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
     "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text-summary mocha",
     "develop": "webpack --mode development --config index.config.js",
     "build": "webpack --mode production --config index.config.js"

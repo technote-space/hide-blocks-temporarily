@@ -1,4 +1,4 @@
-require( 'should' ); // eslint-disable-line no-unused-vars
+require( 'should' );
 import { getNamespace } from '../src/utilis';
 import { PLUGIN_NAME } from '../src/constant';
 

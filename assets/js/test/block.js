@@ -1,7 +1,7 @@
-require( 'should' ); // eslint-disable-line no-unused-vars
+require( 'should' );
 import { blockHasDefault, removeHiddenClassFromBlocks } from '../src/utilis';
 
-const { dispatch, select } = wp.data;
+const { select } = wp.data;
 
 describe( 'blockHasDefault test', () => {
 	it( 'should return false if not have default', () => {
@@ -27,7 +27,7 @@ describe( 'blockHasDefault test', () => {
 describe( 'removeHiddenClassFromBlocks test', () => {
 	it( 'should return test data', () => {
 		const blocks = select( 'core/editor' ).getBlocks();
-		blocks.should.have.length( 5 );
+		blocks.should.have.length( 5 ); // eslint-disable-line no-magic-numbers
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );
 		blocks[ 2 ].attributes.className.should.equal( 'test1' );
@@ -38,7 +38,7 @@ describe( 'removeHiddenClassFromBlocks test', () => {
 	it( 'should removed is-style-hidden class', () => {
 		removeHiddenClassFromBlocks();
 		const blocks = select( 'core/editor' ).getBlocks();
-		blocks.should.have.length( 5 );
+		blocks.should.have.length( 5 ); // eslint-disable-line no-magic-numbers
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );
 		blocks[ 2 ].attributes.className.should.equal( 'test1' );

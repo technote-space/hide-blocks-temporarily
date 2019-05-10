@@ -1,4 +1,4 @@
-require( 'should' ); // eslint-disable-line no-unused-vars
+require( 'should' );
 import { translate } from '../src/utilis';
 
 describe( 'translate test', () => {
