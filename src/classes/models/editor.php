@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 1.0.0
+ * @version 1.0.1
  * @author Technote
  * @since 0.0.1
  * @copyright Technote All Rights Reserved
@@ -9,6 +9,11 @@
  */
 
 namespace Hide_Blocks_Temporarily\Classes\Models;
+
+use WP_Framework_Common\Traits\Package;
+use WP_Framework_Core\Traits\Hook;
+use WP_Framework_Core\Traits\Singleton;
+use WP_Framework_Presenter\Traits\Presenter;
 
 if ( ! defined( 'HIDE_BLOCKS_TEMPORARILY' ) ) {
 	exit;
@@ -20,7 +25,7 @@ if ( ! defined( 'HIDE_BLOCKS_TEMPORARILY' ) ) {
  */
 class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_Core\Interfaces\Hook, \WP_Framework_Presenter\Interfaces\Presenter {
 
-	use \WP_Framework_Core\Traits\Singleton, \WP_Framework_Core\Traits\Hook, \WP_Framework_Presenter\Traits\Presenter, \WP_Framework_Common\Traits\Package;
+	use Singleton, Hook, Presenter, Package;
 
 	/**
 	 * @param null|string $pre_render
