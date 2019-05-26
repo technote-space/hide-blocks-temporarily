@@ -1,5 +1,5 @@
 require( 'should' );
-import { translate } from '../src/utilis';
+import { translate } from '../src/utils';
 
 describe( 'translate test', () => {
 	it( 'should translate if data exists', () => {

@@ -1,5 +1,5 @@
 require( 'should' );
-import { blockHasDefault, removeHiddenClassFromBlocks } from '../src/utilis';
+import { blockHasDefault, removeHiddenClassFromBlocks } from '../src/utils';
 
 const { select } = wp.data;
 

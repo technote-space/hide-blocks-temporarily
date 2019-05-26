@@ -1,5 +1,5 @@
 require( 'should' );
-import { getNamespace } from '../src/utilis';
+import { getNamespace } from '../src/utils';
 import { PLUGIN_NAME } from '../src/constant';
 
 describe( 'getNamespace test', () => {
