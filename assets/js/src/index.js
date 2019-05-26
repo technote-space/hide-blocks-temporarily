@@ -6,12 +6,15 @@ const { __ } = wp.i18n;
 
 import { PluginIcon } from './components';
 import { PLUGIN_NAME } from './constant';
-import { translate, getNamespace, blockHasDefault, removeHiddenClassFromBlocks } from './utils';
+import { translate, getNamespace, blockHasDefault, removeHiddenClassFromBlocks, isTargetBlockType } from './utils';
 
 addFilter(
 	'blocks.registerBlockType',
 	getNamespace( 'register-hide-block-style' ),
 	( setting, name ) => {
+		if ( ! isTargetBlockType( setting ) ) {
+			return setting;
+		}
 		if ( ! blockHasDefault( setting ) ) {
 			registerBlockStyle( name, {
 				name: 'default',

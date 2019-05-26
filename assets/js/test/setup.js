@@ -35,3 +35,6 @@ global.window = {};
 global.window.lodash = {
 	filter, isEmpty,
 };
+global.wp.blocks = {
+	isReusableBlock: blockOrType => blockOrType.name === 'core/block',
+};
