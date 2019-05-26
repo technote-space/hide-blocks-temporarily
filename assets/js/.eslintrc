@@ -9,6 +9,11 @@
     "es6": true,
     "browser": true
   },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
   "rules": {
     "camelcase": [
       "error",
