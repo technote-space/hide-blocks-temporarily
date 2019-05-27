@@ -34,13 +34,16 @@ This plugin needs PHP5.6 or higher.
 == Upgrade Notice ==
 
 = 1.0.1 =
-* テストの追加 及び リファクタリング
+* テストの追加 及び リファクタリングを行いました。
+* 再利用ブロックを対象から除外しました。 [詳細](https://github.com/technote-space/hide-blocks-temporarily/issues/11)
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/9)
 
 == Changelog ==
 
-= 1.0.1 (2019/5/11) =
+= 1.0.1 (2019/5/27) =
 * Improved: Add tests and refactoring
+* Changed: [Exclude Reusable Block](https://github.com/technote-space/hide-blocks-temporarily/issues/11)
+* Improved: [Consider empty setting](https://github.com/technote-space/hide-blocks-temporarily/issues/10)
 
 = 1.0.0 (2019/4/30) =
 
