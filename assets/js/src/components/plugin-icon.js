@@ -2,6 +2,10 @@ const { SVG } = wp.components;
 
 import { ICON_SIZE, PLUGIN_ICON } from '../constant';
 
+/**
+ * @returns {SVG} plugin icon
+ * @constructor
+ */
 export function PluginIcon() {
 	return (
 		<SVG

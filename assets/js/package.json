@@ -1,34 +1,16 @@
 {
   "name": "hide-blocks-temporarily",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint && npm run cover",
+    "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
+    "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text-summary mocha",
     "develop": "webpack --mode development --config index.config.js",
     "build": "webpack --mode production --config index.config.js"
   },
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "ie": 11
-          }
-        }
-      ]
-    ],
-    "plugins": [
-      [
-        "transform-react-jsx",
-        {
-          "pragma": "wp.element.createElement"
-        }
-      ]
-    ]
-  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -37,7 +19,14 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "webpack": "^4.30.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "jsdom": "13.0.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.0",
+    "should": "^13.2.3",
+    "webpack": "^4.32.2",
     "webpack-cli": "~3.1.2"
   }
 }
