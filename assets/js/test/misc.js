@@ -11,5 +11,7 @@ describe( 'isTargetBlockType test', () => {
 	it( 'should false if not target block', () => {
 		isTargetBlockType( { name: 'core/block' } ).should.equal( false );
 		isTargetBlockType( { name: 'core/template' } ).should.equal( false );
+		isTargetBlockType( {} ).should.equal( false );
+		isTargetBlockType( null ).should.equal( false );
 	} );
 } );

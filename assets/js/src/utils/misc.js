@@ -5,5 +5,5 @@ const { isReusableBlock } = wp.blocks;
  * @returns {boolean} start or not
  */
 export function isTargetBlockType( blockOrType ) {
-	return ! isReusableBlock( blockOrType ) && 'core/template' !== blockOrType.name;
+	return !! ( blockOrType && blockOrType.name ) && ! isReusableBlock( blockOrType ) && 'core/template' !== blockOrType.name;
 }
