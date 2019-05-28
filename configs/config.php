@@ -15,7 +15,7 @@ if ( ! defined( 'HIDE_BLOCKS_TEMPORARILY' ) ) {
 return [
 
 	// required wordpress version
-	'required_wordpress_version' => '5.1', // for gutenberg
+	'required_wordpress_version' => '5.0', // for gutenberg
 
 	// github repo
 	'github_repo'                => 'technote-space/hide-blocks-temporarily',
