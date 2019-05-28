@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 1.0.0
+ * @version 1.0.2
  * @author Technote
  * @since 0.0.1
  * @copyright Technote All Rights Reserved
@@ -15,7 +15,7 @@ if ( ! defined( 'HIDE_BLOCKS_TEMPORARILY' ) ) {
 return [
 
 	// required wordpress version
-	'required_wordpress_version' => '5.1', // for gutenberg
+	'required_wordpress_version' => '5.0', // for gutenberg
 
 	// github repo
 	'github_repo'                => 'technote-space/hide-blocks-temporarily',

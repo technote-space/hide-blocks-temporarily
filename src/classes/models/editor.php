@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author Technote
  * @since 0.0.1
  * @copyright Technote All Rights Reserved
@@ -35,15 +35,44 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 */
 	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function pre_render_block( $pre_render, $block ) {
-		$class = $this->app->array->get( $block, 'attrs.className' );
-		if ( ! empty( $class ) ) {
-			$classes = $this->app->string->explode( $class, ' ' );
-			if ( in_array( 'is-style-hidden', $classes ) ) {
+		if ( $this->is_style_hidden( $block ) ) {
+			return '';
+		}
+
+		return $pre_render;
+	}
+
+	/**
+	 * @param string $block_content The block content about to be appended.
+	 * @param array $block The full block, including name and attributes.
+	 *
+	 * @return string
+	 */
+	/** @noinspection PhpUnusedPrivateMethodInspection */
+	private function render_block( $block_content, $block ) {
+		if ( $this->app->utility->compare_wp_version( '5.1.0', '<' ) ) {
+			if ( $this->is_style_hidden( $block ) ) {
 				return '';
 			}
 		}
 
-		return $pre_render;
+		return $block_content;
+	}
+
+	/**
+	 * @param array $block
+	 *
+	 * @return bool
+	 */
+	private function is_style_hidden( $block ) {
+		$class = $this->app->array->get( $block, 'attrs.className' );
+		if ( ! empty( $class ) ) {
+			$classes = $this->app->string->explode( $class, ' ' );
+
+			return in_array( 'is-style-hidden', $classes );
+		}
+
+		return false;
 	}
 
 	/**
