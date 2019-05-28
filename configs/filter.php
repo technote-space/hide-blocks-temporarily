@@ -18,6 +18,9 @@ return [
 		'pre_render_block'            => [
 			'pre_render_block',
 		],
+		'render_block'                => [
+			'render_block',
+		],
 		'enqueue_block_editor_assets' => [
 			'enqueue_block_editor_assets' => 1,
 		],
