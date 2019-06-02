@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run lint && npm run cover",
     "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
-    "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text-summary mocha",
+    "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --recursive",
     "develop": "webpack --mode development --config index.config.js",
     "build": "webpack --mode production --config index.config.js"
   },
