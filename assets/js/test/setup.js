@@ -15,21 +15,17 @@ global.wp.test.blocks = [
 	{ clientId: 5, attributes: { className: 'is-style-hidden test3' } },
 ];
 global.wp.data = {
-	dispatch: () => {
-		return {
-			updateBlock: ( clientId, { attributes } ) => {
-				global.wp.test.blocks.filter( block => block.clientId === clientId ).map( block => {
-					block.attributes = Object.assign( block.attributes, attributes );
-					return block;
-				} );
-			},
-		};
-	},
-	select: () => {
-		return {
-			getBlocks: () => global.wp.test.blocks,
-		};
-	},
+	dispatch: () => ( {
+		updateBlock: ( clientId, { attributes } ) => {
+			global.wp.test.blocks.filter( block => block.clientId === clientId ).map( block => {
+				block.attributes = Object.assign( block.attributes, attributes );
+				return block;
+			} );
+		},
+	} ),
+	select: () => ( {
+		getBlocks: () => global.wp.test.blocks,
+	} ),
 };
 global.window = {};
 global.window.lodash = {

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run lint && npm run cover",
     "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
-    "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text-summary mocha",
+    "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --recursive",
     "develop": "webpack --mode development --config index.config.js",
     "build": "webpack --mode production --config index.config.js"
   },
@@ -21,7 +21,6 @@
     "babel-register": "^6.26.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0",
-    "jsdom": "15.1.1",
     "lodash": "^4.17.11",
     "mocha": "^6.1.4",
     "nyc": "^14.1.0",
