@@ -1,36 +1,39 @@
+const Mousetrap = require( 'mousetrap' );
 const { filter, isEmpty } = require( 'lodash' );
-
+global.Mousetrap = Mousetrap;
+global.window.lodash = {
+	filter, isEmpty,
+};
+global.window.matchMedia = () => ( {
+	matches: true, addListener: () => {
+	},
+} );
 global.hbtParams = {
 	translate: {
 		test: 'テスト',
 	},
 };
-global.wp = {};
-global.wp.test = {};
-global.wp.test.blocks = [
-	{ clientId: 1, attributes: {} },
-	{ clientId: 2, attributes: { className: '' } },
-	{ clientId: 3, attributes: { className: 'test1' } },
-	{ clientId: 4, attributes: { className: 'test2 is-style-hidden' } },
-	{ clientId: 5, attributes: { className: 'is-style-hidden test3' } },
-];
-global.wp.data = {
-	dispatch: () => ( {
-		updateBlock: ( clientId, { attributes } ) => {
-			global.wp.test.blocks.filter( block => block.clientId === clientId ).map( block => {
-				block.attributes = Object.assign( block.attributes, attributes );
-				return block;
-			} );
-		},
-	} ),
-	select: () => ( {
-		getBlocks: () => global.wp.test.blocks,
-	} ),
+
+const blockLibrary = require( '@wordpress/block-library' );
+const blocks = require( '@wordpress/blocks' );
+const data = require( '@wordpress/data' );
+const editor = require( '@wordpress/editor' );
+global.wp = {
+	blockLibrary,
+	blocks,
+	data,
+	editor,
 };
-global.window = {};
-global.window.lodash = {
-	filter, isEmpty,
-};
-global.wp.blocks = {
-	isReusableBlock: blockOrType => blockOrType.name === 'core/block',
-};
+
+blockLibrary.registerCoreBlocks();
+[
+	{},
+	{ className: '' },
+	{ className: 'test1' },
+	{ className: 'test2 is-style-hidden' },
+	{ className: 'is-style-hidden test3' },
+].forEach( attributes => {
+	data.dispatch( 'core/editor' ).insertBlocks(
+		blocks.createBlock( 'core/paragraph', attributes ),
+	);
+} );
