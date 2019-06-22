@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 if [[ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]]; then
-	if [[ -z "$COVERAGE_REPORT" ]] ; then
+	if [[ -z "${COVERAGE_REPORT}" ]]; then
 		phpenv config-rm xdebug.ini
 	fi
 else

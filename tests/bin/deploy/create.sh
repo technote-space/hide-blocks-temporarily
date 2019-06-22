@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 if [[ -z "$PACKAGE_DIR" ]] || [[ -z "$RELEASE_FILE" ]]; then
   exit 1
