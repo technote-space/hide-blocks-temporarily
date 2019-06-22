@@ -15,5 +15,4 @@ bash ${TRAVIS_BUILD_DIR}/tests/bin/deploy/create.sh
 ls -la ${PACKAGE_DIR}
 ls -la ${TRAVIS_BUILD_DIR}/${RELEASE_FILE}
 
-rm -rdf ${PACKAGE_DIR}
-rm -f ${TRAVIS_BUILD_DIR}/${RELEASE_FILE}
+bash ${TRAVIS_BUILD_DIR}/tests/bin/deploy/wp-check-diff.sh

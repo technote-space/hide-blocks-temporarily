@@ -52,7 +52,8 @@
     "bin:phpmd": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/php/phpmd.sh",
     "bin:js-lint": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/js/js-lint.sh",
     "bin:js-test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/js/js-test.sh",
-    "bin:build": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/deploy/env.sh && ./tests/bin/deploy/create.sh",
-    "bin:test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/test.sh"
+    "bin:build": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/deploy/env.sh && bash ./tests/bin/deploy/create.sh",
+    "bin:test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 bash ./tests/bin/test.sh",
+    "bin:diff": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/deploy/env.sh && bash ./tests/bin/deploy/wp-check-diff.sh"
   }
 }

@@ -24,6 +24,8 @@ stages:
     if: branch = master and tag IS blank and type = pull_request
   - name: test
     if: branch = master and tag IS blank and type = pull_request
+  - name: prepare
+    if: branch = master and tag IS blank and type = pull_request
   - name: deploy
     if: tag IS present
 
@@ -142,6 +144,14 @@ jobs:
       dist: trusty
       env: COVERAGE_REPORT=1
       script: bash tests/bin/js/js-test.sh
+      
+      
+    - stage: prepare
+      language: node_js
+      node_js: '11'
+      dist: trusty
+      script:
+        - source tests/bin/deploy/env.sh &&  bash tests/bin/deploy/wp-check-diff.sh
 
 
     - stage: deploy
@@ -150,8 +160,7 @@ jobs:
       dist: trusty
       script: skip
       before_deploy:
-        - source tests/bin/deploy/env.sh
-        - bash tests/bin/deploy/create.sh
+        - source tests/bin/deploy/env.sh && bash tests/bin/deploy/create.sh
       deploy:
         provider: releases
         skip_cleanup: true
@@ -160,8 +169,15 @@ jobs:
         api_key:
           secure: nSfiyceJgNdVlW+0vE8WpUYRwRRLKuJcPpjz30Wf93vU+ES6MZ6aIxhxCxT0vqj/f2IoCNRUNdp2wXY9pZ+bzyVyGVmWfGARcelIBCzryh/eO26uDZEV+hXR778VgMfq/Kz0aDUvWDTWDCd/DdgwPx2c7Fyn7JBEjBqszPOiWCLSXMWdsXseytTBmHqMk11Nl8Cc4mUBMoHgSNxTQ0rJt88pD0alpKJa04/UDHGAL7nCC93S1QlZQCavXU9VJsFmWU4amqRF9KfkfCe/GU7RHKf+tfOz4ccZaHZnUJDAfZAEDXqFAnjsHMdMGFFKWtb6ASm+4JbzxErfJM9DVnpsJ6kmTgMUMYF8SgWeP5KET/IWfEG80nJYxFlFMT2QJ2FRainadWHGYjr1poKAO71lA8qiFA32jy1OTp68c5qk0fbqHiSJ27EKjVyt9daqRJpeMZKvgHOrhnsE6njTmCjIc9rbSJKmOg6OvnzP88GWWeyM6V3Ay8P1Wpevvxflmu+jKXnQfM0Mci2elhElFpVghwVR0cUM6v/OVj1rt75TK02RX0a0Wm5+3U0cPkEuajS/3D0G/QGXaopTQgY0PRp6/BsHyoe+82ALs4Wdc5BzEUV32Q3C51wBWEOWanumz3LU1fZYwsiGnzk5MC/aS2J7hmaAzZFI5tJ+2Fm7Y8TqQgM=
         file: "${RELEASE_FILE}"
-        on:
-          tags: true
+
+    - stage: deploy
+      language: node_js
+      node_js: '11'
+      dist: trusty
+      script: skip
+      deploy:
+        provider: script
+        script: source tests/bin/deploy/env.sh && bash tests/bin/deploy/wp-release.sh
 
   allow_failures:
     - env: WP_VERSION=4.9
