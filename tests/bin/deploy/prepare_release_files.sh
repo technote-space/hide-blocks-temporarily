@@ -36,4 +36,3 @@ cp ${TRAVIS_BUILD_DIR}/readme.txt ${PACKAGE_DIR}/ 2> /dev/null || :
 
 rm -f ${PACKAGE_DIR}/index.php
 rm -rdf ${PACKAGE_DIR}/vendor/bin
-

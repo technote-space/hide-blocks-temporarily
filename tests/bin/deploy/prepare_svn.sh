@@ -21,7 +21,7 @@ if [[ -d ${SVN_DIR} ]]; then
 	rm -rdf ${SVN_DIR}
 fi
 mkdir -p ${SVN_DIR}
-svn co ${SVN_URL}/trunk ${SVN_DIR}
+svn co -q ${SVN_URL}/trunk ${SVN_DIR}
 
 echo ""
 echo ">> Prepare release files."
