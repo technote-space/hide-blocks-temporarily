@@ -28,35 +28,53 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	use Singleton, Hook, Presenter, Package;
 
 	/**
+	 * @var bool $called
+	 */
+	private $called = false;
+
+	/**
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
+	 *
 	 * @param null|string $pre_render
 	 * @param array $block
 	 *
-	 * @return mixed
+	 * @return null|string
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function pre_render_block( $pre_render, $block ) {
-		if ( $this->is_style_hidden( $block ) ) {
-			return '';
-		}
-
-		return $pre_render;
+		return $this->check_hidden_block( $pre_render, $block );
 	}
 
 	/**
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
+	 *
 	 * @param string $block_content The block content about to be appended.
 	 * @param array $block The full block, including name and attributes.
 	 *
 	 * @return string
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function render_block( $block_content, $block ) {
-		if ( $this->app->utility->compare_wp_version( '5.1.0', '<' ) ) {
-			if ( $this->is_style_hidden( $block ) ) {
-				return '';
-			}
+		return $this->check_hidden_block( $block_content, $block );
+	}
+
+	/**
+	 * @param null|string $default
+	 * @param array $block
+	 *
+	 * @return null|string
+	 */
+	private function check_hidden_block( $default, $block ) {
+		if ( $this->called ) {
+			return $default;
+		}
+		$this->called = true;
+
+		if ( $this->is_style_hidden( $block ) ) {
+			return '';
 		}
 
-		return $block_content;
+		return $default;
 	}
 
 	/**
@@ -69,7 +87,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 		if ( ! empty( $class ) ) {
 			$classes = $this->app->string->explode( $class, ' ' );
 
-			return in_array( 'is-style-hidden', $classes );
+			return in_array( 'is-style-hidden', $classes, true );
 		}
 
 		return false;
@@ -77,8 +95,10 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 
 	/**
 	 * enqueue css for gutenberg
+	 *
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function enqueue_block_editor_assets() {
 		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', [
 			'wp-hooks',
