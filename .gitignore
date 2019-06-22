@@ -23,5 +23,5 @@ Thumbs.db
 *.lib
 *.sbr
 logs
-vendor/bin
 /cache
+/vendor
