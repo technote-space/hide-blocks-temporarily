@@ -3,6 +3,7 @@
 set -e
 
 if [[ -z "${PACKAGE_DIR}" ]] || [[ -z "${RELEASE_FILE}" ]]; then
+	echo "<PACKAGE_DIR> and <RELEASE_FILE> are required."
 	exit 1
 fi
 

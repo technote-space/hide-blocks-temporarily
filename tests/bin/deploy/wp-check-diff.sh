@@ -4,6 +4,10 @@ set -e
 
 bash ${TRAVIS_BUILD_DIR}/tests/bin/deploy/prepare_svn.sh
 
+if [[ ! -d ${SVN_DIR} ]]; then
+	exit;
+fi
+
 pushd ${SVN_DIR}
 
 echo ""

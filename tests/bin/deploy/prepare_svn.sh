@@ -2,9 +2,19 @@
 
 set -e
 
-if [[ -z "${REPO_NAME}" ]]; then
-	echo "repo name is required."
+if [[ -z "${SVN_DIR}" ]]; then
+	echo "<SVN_DIR> is required."
 	exit 1
+fi
+
+if [[ -d ${SVN_DIR} ]]; then
+	chmod -R +w ${SVN_DIR}
+	rm -rdf ${SVN_DIR}
+fi
+
+if [[ -z "${REPO_NAME}" ]]; then
+	echo "<REPO_NAME> is required."
+	exit
 fi
 
 set +e
@@ -16,10 +26,6 @@ set -e
 
 echo ""
 echo ">> Run svn checkout."
-if [[ -d ${SVN_DIR} ]]; then
-	chmod -R +w ${SVN_DIR}
-	rm -rdf ${SVN_DIR}
-fi
 mkdir -p ${SVN_DIR}
 svn co -q ${SVN_URL}/trunk ${SVN_DIR}
 
