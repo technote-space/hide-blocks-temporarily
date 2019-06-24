@@ -100,18 +100,29 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
 	 */
 	private function enqueue_block_editor_assets() {
-		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', [
-			'wp-hooks',
+		$depends = [
+			'wp-block-editor',
+			'wp-block-library',
 			'wp-blocks',
-			'wp-compose',
-			'wp-element',
-			'wp-editor',
 			'wp-components',
-			'wp-edit-post',
+			'wp-core-data',
 			'wp-data',
+			'wp-edit-post',
+			'wp-editor',
+			'wp-element',
+			'wp-hooks',
 			'wp-i18n',
+			'wp-rich-text',
+			'wp-url',
 			'lodash',
-		], $this->app->get_plugin_version(), false );
+		];
+		foreach ( $depends as $key => $depend ) {
+			if ( ! $this->app->editor->is_support_editor_package( $depend ) ) {
+				unset( $depends[ $key ] );
+			}
+		}
+		$depends[] = 'lodash';
+		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', $depends, $this->app->get_plugin_version(), false );
 		$this->localize_script( 'hide-blocks-temporarily', 'hbtParams', [
 			'plugin_icon' => $this->get_img_url( 'icon-24x24.png' ),
 			'translate'   => $this->get_translate_data( [

@@ -1,5 +1,8 @@
+import { Helpers } from '@technote-space/gutenberg-utils';
+
 const { dispatch, select } = wp.data;
 const { filter, isEmpty } = window.lodash;
+const { getEditorStoreKey } = Helpers;
 
 /**
  * @param {object} setting setting
@@ -13,7 +16,7 @@ export function blockHasDefault( setting ) {
  * remove hidden class
  */
 export function removeHiddenClassFromBlocks() {
-	getHasClassNameBlocks().forEach( block => dispatch( 'core/editor' ).updateBlock( block.clientId, {
+	getHasClassNameBlocks().forEach( block => dispatch( getEditorStoreKey() ).updateBlock( block.clientId, {
 		attributes: {
 			className: removeHiddenClass( block.attributes.className ),
 		},
@@ -32,7 +35,7 @@ function hasClassName( block ) {
  * @returns {array} filtered blocks
  */
 function getHasClassNameBlocks() {
-	return select( 'core/editor' ).getBlocks().filter( block => {
+	return select( getEditorStoreKey() ).getBlocks().filter( block => {
 		return hasClassName( block );
 	} );
 }
