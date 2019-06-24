@@ -35,8 +35,8 @@ This plugin needs PHP5.6 or higher.
 == Upgrade Notice ==
 
 = 1.0.5 =
-* リファクタリング及びテスト自動化などを行いました。
-* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/44) [詳細](https://github.com/technote-space/hide-blocks-temporarily/issues/34)
+* リファクタリング及びテスト自動化などを行いました。 [詳細](https://github.com/technote-space/hide-blocks-temporarily/issues/34)
+* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/44)
 
 = 1.0.4 =
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/27)
