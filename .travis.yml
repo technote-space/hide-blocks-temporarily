@@ -21,11 +21,11 @@ cache:
 
 stages:
   - name: check
-    if: branch = master and tag IS blank and type = pull_request
+    if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: test
-    if: branch = master and tag IS blank and type = pull_request
+    if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: prepare
-    if: branch = master and tag IS blank and type = pull_request
+    if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: deploy
     if: tag IS present
 
