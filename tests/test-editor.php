@@ -54,22 +54,67 @@ class EditorTest extends WP_UnitTestCase {
 	 * @throws ReflectionException
 	 */
 	private function check_hidden_block_test( $filter ) {
-		$this->reset_called();
-		$this->assertNull( apply_filters( $filter, null, [] ) );
-		$this->reset_called();
-		$this->assertNull( apply_filters( $filter, null, [
+		$this->reset_called_filter();
+		$this->assertEquals( 'test', apply_filters( $filter, 'test', [] ) );
+		$this->reset_called_filter();
+		$this->assertEquals( 'test', apply_filters( $filter, 'test', [
 			'attrs' => [
 				'className' => '',
 			],
 		] ) );
-		$this->reset_called();
-		$this->assertEquals( '', apply_filters( $filter, null, [
+
+		$this->reset_called_filter();
+		$this->assertEquals( '', apply_filters( $filter, 'test', [
 			'attrs' => [
 				'className' => 'a b c is-style-hidden',
 			],
 		] ) );
 
-		$this->assertNull( apply_filters( $filter, null, [] ) );
+		$this->reset_called_filter();
+		$this->assertEquals( 'test', apply_filters( $filter, 'test', [] ) );
+		$this->assertEquals( '', apply_filters( $filter, 'test', [
+			'attrs' => [
+				'className' => 'is-style-hidden a b c',
+			],
+		] ) );
+		$this->assertEquals( 'test', apply_filters( $filter, 'test', [
+			'attrs' => [
+				'className' => '',
+			],
+		] ) );
+		$this->assertEquals( '', apply_filters( $filter, 'test', [
+			'attrs' => [
+				'className' => 'a b c is-style-hidden',
+			],
+		] ) );
+		$this->assertEquals( 'test', apply_filters( $filter, 'test', [] ) );
+	}
+
+	/**
+	 * @throws ReflectionException
+	 */
+	public function test_call_once() {
+		$this->reset_called_filter();
+		$this->assertEquals( 'test1', apply_filters( 'pre_render_block', 'test1', [] ) );
+		$this->assertEquals( 'test2', apply_filters( 'render_block', 'test2', [] ) );
+		$this->assertEquals( 'test3', apply_filters( 'render_block', 'test3', [
+			'attrs' => [
+				'className' => 'is-style-hidden a b c',
+			],
+		] ) );
+
+		$this->reset_called_filter();
+		$this->assertEquals( '', apply_filters( 'pre_render_block', 'test1', [
+			'attrs' => [
+				'className' => 'is-style-hidden a b c',
+			],
+		] ) );
+		$this->assertEquals( 'test2', apply_filters( 'render_block', 'test2', [] ) );
+		$this->assertEquals( 'test3', apply_filters( 'render_block', 'test3', [
+			'attrs' => [
+				'className' => 'a b c is-style-hidden',
+			],
+		] ) );
 	}
 
 	public function test_enqueue_block_editor_assets() {
@@ -91,11 +136,11 @@ class EditorTest extends WP_UnitTestCase {
 	/**
 	 * @throws ReflectionException
 	 */
-	private function reset_called() {
+	private function reset_called_filter() {
 		$reflection = new ReflectionClass( static::$editor );
-		$property   = $reflection->getProperty( 'called' );
+		$property   = $reflection->getProperty( 'called_filter' );
 		$property->setAccessible( true );
-		$property->setValue( static::$editor, false );
+		$property->setValue( static::$editor, null );
 		$property->setAccessible( false );
 	}
 }
