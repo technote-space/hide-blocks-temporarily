@@ -12,14 +12,14 @@ if [[ -d ${SVN_DIR} ]]; then
 	rm -rdf ${SVN_DIR}
 fi
 
-if [[ -z "${REPO_NAME}" ]]; then
-	echo "<REPO_NAME> is required."
+if [[ -z "${SVN_URL}" ]]; then
+	echo "<SVN_URL> is required."
 	exit
 fi
 
 set +e
 if [[ -z $(svn ls ${SVN_URL}) ]]; then
-	echo "repository [${REPO_NAME}] is not exists."
+	echo "repository [${SVN_URL}] is not exists."
 	exit
 fi
 set -e
