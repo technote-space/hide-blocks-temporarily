@@ -26,9 +26,9 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	use Singleton, Hook, Presenter, Package;
 
 	/**
-	 * @var bool $called
+	 * @var string $called_filter
 	 */
-	private $called = false;
+	private $called_filter = null;
 
 	/**
 	 * @noinspection PhpUnusedPrivateMethodInspection
@@ -40,7 +40,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 * @return null|string
 	 */
 	private function pre_render_block( $pre_render, $block ) {
-		return $this->check_hidden_block( $pre_render, $block );
+		return $this->check_hidden_block( $pre_render, $block, 'pre_render_block' );
 	}
 
 	/**
@@ -53,20 +53,22 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 * @return string
 	 */
 	private function render_block( $block_content, $block ) {
-		return $this->check_hidden_block( $block_content, $block );
+		return $this->check_hidden_block( $block_content, $block, 'render_block' );
 	}
 
 	/**
 	 * @param null|string $default
 	 * @param array $block
+	 * @param string $filter_name
 	 *
 	 * @return null|string
 	 */
-	private function check_hidden_block( $default, $block ) {
-		if ( $this->called ) {
+	private function check_hidden_block( $default, $block, $filter_name ) {
+		if ( ! isset( $this->called_filter ) ) {
+			$this->called_filter = $filter_name;
+		} elseif ( $this->called_filter !== $filter_name ) {
 			return $default;
 		}
-		$this->called = true;
 
 		if ( $this->is_style_hidden( $block ) ) {
 			return '';
