@@ -27,7 +27,7 @@ describe( 'blockHasDefault test', () => {
 
 describe( 'removeHiddenClassFromBlocks test', () => {
 	it( 'should return test data', () => {
-		const blocks = select( 'core/editor' ).getBlocks();
+		const blocks = select( 'core/block-editor' ).getBlocks();
 		blocks.should.have.length( 5 );
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );
@@ -38,7 +38,7 @@ describe( 'removeHiddenClassFromBlocks test', () => {
 
 	it( 'should removed is-style-hidden class', () => {
 		removeHiddenClassFromBlocks();
-		const blocks = select( 'core/editor' ).getBlocks();
+		const blocks = select( 'core/block-editor' ).getBlocks();
 		blocks.should.have.length( 5 );
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );

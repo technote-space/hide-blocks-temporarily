@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04162062a6df7680d4729443b387d171",
+    "content-hash": "fa8567a9a86af4adc4d26ddc6ce94f3c",
     "packages": [
         {
             "name": "matthiasmullie/minify",
@@ -244,6 +244,47 @@
                 "wordpress"
             ],
             "time": "2019-06-18T09:27:40+00:00"
+        },
+        {
+            "name": "wp-content-framework/editor",
+            "version": "v0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-content-framework/editor.git",
+                "reference": "c5b0f4c20424f656372c419f00070586040d6e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/c5b0f4c20424f656372c419f00070586040d6e32",
+                "reference": "c5b0f4c20424f656372c419f00070586040d6e32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phake/phake": "~2.0",
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "technote",
+                    "email": "technote.space@gmail.com",
+                    "homepage": "https://technote.space"
+                }
+            ],
+            "description": "Wordpress content framework",
+            "homepage": "https://github.com/wp-content-framework",
+            "keywords": [
+                "framework",
+                "wordpress"
+            ],
+            "time": "2019-06-24T04:56:12+00:00"
         },
         {
             "name": "wp-content-framework/presenter",
