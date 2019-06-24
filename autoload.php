@@ -1,14 +1,14 @@
 <?php
-/*
-Plugin Name: Hide Blocks Temporarily
-Plugin URI: https://wordpress.org/plugins/hide-blocks-temporarily/
-Description: This plugin makes it easy to hides blocks temporarily.
-Author: Technote
-Version: 1.0.4
-Author URI: https://technote.space
-Text Domain: hide-blocks-temporarily
-Domain Path: /languages/
-*/
+/**
+ * Plugin Name: Hide Blocks Temporarily
+ * Plugin URI: https://wordpress.org/plugins/hide-blocks-temporarily/
+ * Description: This plugin makes it easy to hides blocks temporarily.
+ * Author: Technote
+ * Version: 1.0.5
+ * Author URI: https://technote.space
+ * Text Domain: hide-blocks-temporarily
+ * Domain Path: /languages/
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

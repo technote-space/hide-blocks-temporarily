@@ -23,5 +23,8 @@ Thumbs.db
 *.lib
 *.sbr
 logs
-vendor/bin
 /cache
+
+!tests/bin/**/*.sh
+/coverage
+/vendor

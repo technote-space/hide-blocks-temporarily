@@ -1,6 +1,60 @@
 {
-    "require": {
-        "wp-content-framework/core": "~0.0",
-        "wp-content-framework/update": "~0.0"
+  "name": "technote-space/hide-blocks-temporarily",
+  "description": "WordPress plugin to hide Gutenberg blocks temporarily",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Technote",
+      "email": "technote.space@gmail.com",
+      "homepage": "https://technote.space"
     }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "*",
+    "phpmd/phpmd": "^2.6",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+    "roave/security-advisories": "dev-master",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phake/phake": "^2.3 || ^3.1",
+    "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5"
+  },
+  "require": {
+    "php": ">=5.6",
+    "wp-content-framework/core": "~0.0",
+    "wp-content-framework/update": "~0.0",
+    "wp-content-framework/editor": "~0.0"
+  },
+  "scripts": {
+    "test": [
+      "@phpcs",
+      "@phpmd",
+      "@phpunit"
+    ],
+    "phpunit": [
+      "phpunit"
+    ],
+    "phpcs": [
+      "phpcs --standard=./phpcs.xml"
+    ],
+    "fix": [
+      "phpcbf --standard=./phpcs.xml"
+    ],
+    "phpmd": [
+      "phpmd ./src/,./configs/,./tests/ text phpmd.xml"
+    ],
+    "coveralls": [
+      "php-coveralls -v"
+    ],
+    "bin:wp-test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/php/wp-test.sh",
+    "bin:phpcs": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/php/phpcs.sh",
+    "bin:phpmd": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/php/phpmd.sh",
+    "bin:js-lint": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/js/js-lint.sh",
+    "bin:js-test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ./tests/bin/js/js-test.sh",
+    "bin:build": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/deploy/env.sh && bash ./tests/bin/deploy/create.sh",
+    "bin:test": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 bash ./tests/bin/test.sh",
+    "bin:diff": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./tests/bin/deploy/env.sh && bash ./tests/bin/deploy/wp-check-diff.sh"
+  }
 }

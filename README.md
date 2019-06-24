@@ -1,8 +1,12 @@
 # Hide Blocks Temporarily
 
+[![Build Status](https://travis-ci.com/technote-space/hide-blocks-temporarily.svg?branch=master)](https://travis-ci.com/technote-space/hide-blocks-temporarily)
+[![Coverage Status](https://coveralls.io/repos/github/technote-space/hide-blocks-temporarily/badge.svg?branch=master)](https://coveralls.io/github/technote-space/hide-blocks-temporarily?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6f1b80e17b54422a973bcecad18947d6)](https://www.codacy.com/app/technote-space/hide-blocks-temporarily?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=technote-space/hide-blocks-temporarily&amp;utm_campaign=Badge_Grade)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![PHP: >=5.6](https://img.shields.io/badge/PHP-%3E%3D5.6-orange.svg)](http://php.net/)
-[![WordPress: >=5.0](https://img.shields.io/badge/WordPress-%3E%3D5.0-brightgreen.svg)](https://wordpress.org/)
+![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/hide-blocks-temporarily.svg)
+![WordPress Plugin: Tested WP Version](https://img.shields.io/wordpress/plugin/tested/hide-blocks-temporarily.svg)
 
 ![バナー](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/banner-772x250.png)
 

@@ -1,8 +1,6 @@
 <?php
 /**
- * @version 1.0.2
  * @author Technote
- * @since 0.0.1
  * @copyright Technote All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
  * @link https://technote.space/
@@ -28,35 +26,55 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	use Singleton, Hook, Presenter, Package;
 
 	/**
+	 * @var string $called_filter
+	 */
+	private $called_filter = null;
+
+	/**
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
+	 *
 	 * @param null|string $pre_render
 	 * @param array $block
 	 *
-	 * @return mixed
+	 * @return null|string
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function pre_render_block( $pre_render, $block ) {
-		if ( $this->is_style_hidden( $block ) ) {
-			return '';
-		}
-
-		return $pre_render;
+		return $this->check_hidden_block( $pre_render, $block, 'pre_render_block' );
 	}
 
 	/**
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
+	 *
 	 * @param string $block_content The block content about to be appended.
 	 * @param array $block The full block, including name and attributes.
 	 *
 	 * @return string
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function render_block( $block_content, $block ) {
-		if ( $this->app->utility->compare_wp_version( '5.1.0', '<' ) ) {
-			if ( $this->is_style_hidden( $block ) ) {
-				return '';
-			}
+		return $this->check_hidden_block( $block_content, $block, 'render_block' );
+	}
+
+	/**
+	 * @param null|string $default
+	 * @param array $block
+	 * @param string $filter_name
+	 *
+	 * @return null|string
+	 */
+	private function check_hidden_block( $default, $block, $filter_name ) {
+		if ( ! isset( $this->called_filter ) ) {
+			$this->called_filter = $filter_name;
+		} elseif ( $this->called_filter !== $filter_name ) {
+			return $default;
 		}
 
-		return $block_content;
+		if ( $this->is_style_hidden( $block ) ) {
+			return '';
+		}
+
+		return $default;
 	}
 
 	/**
@@ -69,7 +87,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 		if ( ! empty( $class ) ) {
 			$classes = $this->app->string->explode( $class, ' ' );
 
-			return in_array( 'is-style-hidden', $classes );
+			return in_array( 'is-style-hidden', $classes, true );
 		}
 
 		return false;
@@ -77,21 +95,34 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 
 	/**
 	 * enqueue css for gutenberg
+	 *
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function enqueue_block_editor_assets() {
-		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', [
-			'wp-hooks',
+		$depends = [
+			'wp-block-editor',
+			'wp-block-library',
 			'wp-blocks',
-			'wp-compose',
-			'wp-element',
-			'wp-editor',
 			'wp-components',
-			'wp-edit-post',
+			'wp-core-data',
 			'wp-data',
+			'wp-edit-post',
+			'wp-editor',
+			'wp-element',
+			'wp-hooks',
 			'wp-i18n',
+			'wp-rich-text',
+			'wp-url',
 			'lodash',
-		], $this->app->get_plugin_version(), false );
+		];
+		foreach ( $depends as $key => $depend ) {
+			if ( ! $this->app->editor->is_support_editor_package( $depend ) ) {
+				unset( $depends[ $key ] );
+			}
+		}
+		$depends[] = 'lodash';
+		$this->enqueue_script( 'hide-blocks-temporarily', 'index.min.js', $depends, $this->app->get_plugin_version(), false );
 		$this->localize_script( 'hide-blocks-temporarily', 'hbtParams', [
 			'plugin_icon' => $this->get_img_url( 'icon-24x24.png' ),
 			'translate'   => $this->get_translate_data( [

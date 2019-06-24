@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 require( 'should' );
 import { blockHasDefault, removeHiddenClassFromBlocks } from '../src/utils';
 
@@ -26,8 +27,8 @@ describe( 'blockHasDefault test', () => {
 
 describe( 'removeHiddenClassFromBlocks test', () => {
 	it( 'should return test data', () => {
-		const blocks = select( 'core/editor' ).getBlocks();
-		blocks.should.have.length( 5 ); // eslint-disable-line no-magic-numbers
+		const blocks = select( 'core/block-editor' ).getBlocks();
+		blocks.should.have.length( 5 );
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );
 		blocks[ 2 ].attributes.className.should.equal( 'test1' );
@@ -37,8 +38,8 @@ describe( 'removeHiddenClassFromBlocks test', () => {
 
 	it( 'should removed is-style-hidden class', () => {
 		removeHiddenClassFromBlocks();
-		const blocks = select( 'core/editor' ).getBlocks();
-		blocks.should.have.length( 5 ); // eslint-disable-line no-magic-numbers
+		const blocks = select( 'core/block-editor' ).getBlocks();
+		blocks.should.have.length( 5 );
 		blocks[ 0 ].attributes.should.not.ownProperty( 'className' );
 		blocks[ 1 ].attributes.className.should.equal( '' );
 		blocks[ 2 ].attributes.className.should.equal( 'test1' );
