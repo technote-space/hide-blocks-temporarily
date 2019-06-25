@@ -77,7 +77,7 @@ install_wp() {
 				LATEST_VERSION=${WP_VERSION%??}
 			else
 				# otherwise, scan the releases and get the most up to date minor version of the major release
-				local VERSION_ESCAPED=$(echo ${WP_VERSION//\./\\.})
+				local VERSION_ESCAPED=${WP_VERSION//\./\\.}
 				LATEST_VERSION=$(grep -o '"version":"'${VERSION_ESCAPED}'[^"]*' $TMPDIR/wp-latest.json | sed 's/"version":"//' | head -1)
 			fi
 			if [[ -z "$LATEST_VERSION" ]]; then
@@ -114,7 +114,7 @@ install_test_suite() {
 	if [[ ! -f wp-tests-config.php ]]; then
 		download https://develop.svn.wordpress.org/${WP_TESTS_TAG}/wp-tests-config-sample.php "${WP_TESTS_DIR}"/wp-tests-config.php
 		# remove all forward slashes in the end
-		WP_CORE_DIR=$(echo ${WP_CORE_DIR%%*(/)})
+		WP_CORE_DIR=${WP_CORE_DIR%%*(/)}
 		sed $ioption "s:dirname( __FILE__ ) . '/src/':'${WP_CORE_DIR}/':" "${WP_TESTS_DIR}"/wp-tests-config.php
 		sed $ioption "s/youremptytestdbnamehere/$DB_NAME/" "${WP_TESTS_DIR}"/wp-tests-config.php
 		sed $ioption "s/yourusernamehere/$DB_USER/" "${WP_TESTS_DIR}"/wp-tests-config.php
