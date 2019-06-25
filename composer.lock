@@ -754,28 +754,28 @@
         },
         {
             "name": "phake/phake",
-            "version": "v2.3.2",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlively/Phake.git",
-                "reference": "d5832f1a0dd2370e14d38bcbaeb6770e8546cff2"
+                "reference": "3848901ed8e236534ae684dd5cf0f3bfc4c8a24c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlively/Phake/zipball/d5832f1a0dd2370e14d38bcbaeb6770e8546cff2",
-                "reference": "d5832f1a0dd2370e14d38bcbaeb6770e8546cff2",
+                "url": "https://api.github.com/repos/mlively/Phake/zipball/3848901ed8e236534ae684dd5cf0f3bfc4c8a24c",
+                "reference": "3848901ed8e236534ae684dd5cf0f3bfc4c8a24c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "sebastian/comparator": "~1.1"
+                "php": ">=7",
+                "sebastian/comparator": "^1.1|^2.0|^3.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
                 "doctrine/common": "2.3.*",
                 "ext-soap": "*",
                 "hamcrest/hamcrest-php": "1.1.*",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "^7.0"
             },
             "suggest": {
                 "doctrine/common": "Allows mock annotations to use import statements for classes.",
@@ -808,7 +808,7 @@
                 "mock",
                 "testing"
             ],
-            "time": "2017-03-20T05:16:34+00:00"
+            "time": "2019-06-06T22:41:35+00:00"
         },
         {
             "name": "php-coveralls/php-coveralls",
@@ -1906,6 +1906,17 @@
         {
             "name": "roave/security-advisories",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roave/SecurityAdvisories.git",
+                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a53a6f855cbff7edb078f87c72bb808c89443a00",
+                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00",
+                "shasum": ""
+            },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.12",
