@@ -1,6 +1,6 @@
 {
   "name": "hide-blocks-temporarily",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
     "start": "npm run build",
@@ -50,6 +50,6 @@
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "@technote-space/gutenberg-utils": "^1.0.15"
+    "@technote-space/gutenberg-utils": "^1.0.16"
   }
 }
