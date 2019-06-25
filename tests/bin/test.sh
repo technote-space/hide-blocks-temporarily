@@ -2,9 +2,9 @@
 
 set -e
 
-bash ${TRAVIS_BUILD_DIR}/tests/bin/php/wp-test.sh
 bash ${TRAVIS_BUILD_DIR}/tests/bin/php/phpcs.sh
 bash ${TRAVIS_BUILD_DIR}/tests/bin/php/phpmd.sh
+bash ${TRAVIS_BUILD_DIR}/tests/bin/php/wp-test.sh
 
 bash ${TRAVIS_BUILD_DIR}/tests/bin/js/js-lint.sh
 bash ${TRAVIS_BUILD_DIR}/tests/bin/js/js-test.sh

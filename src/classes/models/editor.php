@@ -113,8 +113,8 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 			'wp-hooks',
 			'wp-i18n',
 			'wp-rich-text',
+			'wp-server-side-render',
 			'wp-url',
-			'lodash',
 		];
 		foreach ( $depends as $key => $depend ) {
 			if ( ! $this->app->editor->is_support_editor_package( $depend ) ) {
