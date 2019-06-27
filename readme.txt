@@ -4,7 +4,7 @@ Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,6 +33,9 @@ This plugin needs PHP5.6 or higher.
 2. Remove all hide styles
 
 == Upgrade Notice ==
+
+= 1.0.9 =
+* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/67)
 
 = 1.0.8 =
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/64)
@@ -63,6 +66,9 @@ This plugin needs PHP5.6 or higher.
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/9)
 
 == Changelog ==
+
+= 1.0.9 (2019/6/27) =
+* Improved: [Refactor CI scripts](https://github.com/technote-space/hide-blocks-temporarily/issues/65)
 
 = 1.0.8 (2019/6/26) =
 * Changed: trivial changes
