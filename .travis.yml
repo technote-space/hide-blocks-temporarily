@@ -3,6 +3,9 @@ language: php
 sudo: false
 dist: trusty
 
+git:
+  depth: 3
+
 notifications:
   email: false
   slack:
@@ -15,14 +18,17 @@ branches:
 
 cache:
   directories:
-    - "$HOME/.composer/cache"
-    - "$HOME/.npm"
+    - "${HOME}/.composer/cache"
+    - "${HOME}/.npm"
+    - "${TRAVIS_BUILD_DIR}/.plugin"
 
 stages:
   - name: check
-    if: branch = master and tag IS blank and type IN (pull_request, api)
+    if: branch = master and tag IS blank and type IN (pull_request, api, cron)
   - name: test
     if: branch = master and tag IS blank and type IN (pull_request, api)
+  - name: test trunk
+    if: branch = master and tag IS blank and type IN (pull_request, api, cron)
   - name: prepare
     if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: deploy
@@ -57,6 +63,7 @@ jobs:
       env:
         - WP_VERSION=latest
         - COVERAGE_REPORT=1
+        - ACTIVATE_POPULAR_PLUGINS=1
       script: bash travis-ci/bin/php/wp-test.sh
     - stage: test
       language: php
@@ -123,11 +130,6 @@ jobs:
     - stage: test
       language: php
       php: '5.6'
-      env: WP_VERSION=trunk
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '5.6'
       env: WP_VERSION=4.9
       script: bash travis-ci/bin/php/wp-test.sh
     - stage: test
@@ -147,6 +149,22 @@ jobs:
       dist: trusty
       env: COVERAGE_REPORT=1
       script: bash travis-ci/bin/js/js-test.sh
+
+
+    - stage: test trunk
+      language: php
+      php: '7.3'
+      env:
+        - WP_VERSION=trunk
+        - WP_MULTISITE=1
+        - ACTIVATE_POPULAR_PLUGINS=1
+      script: bash travis-ci/bin/php/wp-test.sh
+
+    - stage: test trunk
+      language: php
+      php: '5.6'
+      env: WP_VERSION=trunk
+      script: bash travis-ci/bin/php/wp-test.sh
 
 
     - stage: prepare
