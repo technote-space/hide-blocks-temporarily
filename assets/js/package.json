@@ -50,6 +50,6 @@
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "@technote-space/gutenberg-utils": "^1.0.16"
+    "@technote-space/gutenberg-utils": "^1.0.19"
   }
 }
