@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 class EditorTest extends WP_UnitTestCase {
 
 	/**
-	 * @var WP_Framework|Phake_IMock
+	 * @var WP_Framework
 	 */
 	protected static $app;
 
@@ -32,6 +32,20 @@ class EditorTest extends WP_UnitTestCase {
 	public static function setUpBeforeClass() {
 		static::$app    = WP_Framework::get_instance( HIDE_BLOCKS_TEMPORARILY );
 		static::$editor = Editor::get_instance( static::$app );
+		static::reset();
+	}
+
+	public static function tearDownAfterClass() {
+		static::reset();
+		static::$app->file->delete( static::$app->define->plugin_assets_dir . DS . 'js' . DS . 'index.min.js' );
+		static::$app->file->delete( static::$app->define->plugin_assets_dir . DS . 'css' . DS . 'gutenberg.css' );
+	}
+
+	private static function reset() {
+		wp_dequeue_script( 'hide-blocks-temporarily' );
+		wp_dequeue_style( 'hide-blocks-temporarily' );
+		static::$app->file->put_contents( static::$app->define->plugin_assets_dir . DS . 'js' . DS . 'index.min.js', '' );
+		static::$app->file->put_contents( static::$app->define->plugin_assets_dir . DS . 'css' . DS . 'gutenberg.css', '' );
 	}
 
 	/**
@@ -118,19 +132,13 @@ class EditorTest extends WP_UnitTestCase {
 	}
 
 	public function test_enqueue_block_editor_assets() {
+		static::reset();
+
+		$this->assertFalse( wp_script_is( 'hide-blocks-temporarily' ) );
+		$this->assertFalse( wp_style_is( 'hide-blocks-temporarily' ) );
 		do_action( 'enqueue_block_editor_assets' );
-		$wp_scripts = wp_scripts();
-		$wp_styles  = wp_styles();
-
-		$this->assertArrayHasKey( 'hide-blocks-temporarily', $wp_scripts->registered );
-		$this->assertStringEndsWith( '/assets/js/index.min.js', $wp_scripts->registered['hide-blocks-temporarily']->src );
-		$this->assertContains( 'hide-blocks-temporarily', $wp_scripts->registered['hide-blocks-temporarily']->src );
-		$this->assertArrayHasKey( 'data', $wp_scripts->registered['hide-blocks-temporarily']->extra );
-		$this->assertContains( ' hbtParams ', $wp_scripts->registered['hide-blocks-temporarily']->extra['data'] );
-
-		$this->assertArrayHasKey( 'hide-blocks-temporarily', $wp_styles->registered );
-		$this->assertStringEndsWith( '/assets/css/gutenberg.css', $wp_styles->registered['hide-blocks-temporarily']->src );
-		$this->assertContains( 'hide-blocks-temporarily', $wp_styles->registered['hide-blocks-temporarily']->src );
+		$this->assertTrue( wp_script_is( 'hide-blocks-temporarily' ) );
+		$this->assertTrue( wp_style_is( 'hide-blocks-temporarily' ) );
 	}
 
 	/**
