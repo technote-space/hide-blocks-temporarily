@@ -116,6 +116,111 @@
             "time": "2018-10-25T15:19:41+00:00"
         },
         {
+            "name": "technote/gutenberg-package-versions",
+            "version": "v0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/technote-space/gutenberg-package-versions.git",
+                "reference": "da55faaf89df008a0fc9ce04a4de810e1fbae19b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/technote-space/gutenberg-package-versions/zipball/da55faaf89df008a0fc9ce04a4de810e1fbae19b",
+                "reference": "da55faaf89df008a0fc9ce04a4de810e1fbae19b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Technote\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Technote",
+                    "email": "technote.space@gmail.com",
+                    "homepage": "https://technote.space"
+                }
+            ],
+            "description": "gutenberg package versions",
+            "homepage": "https://github.com/technote-space/gutenberg-package-versions",
+            "keywords": [
+                "gutenberg",
+                "wordpress"
+            ],
+            "time": "2019-07-09T16:25:58+00:00"
+        },
+        {
+            "name": "technote/gutenberg-packages",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/technote-space/gutenberg-packages.git",
+                "reference": "217c03f8cc21f1f1ce3c361e8f1f72219d84e191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/technote-space/gutenberg-packages/zipball/217c03f8cc21f1f1ce3c361e8f1f72219d84e191",
+                "reference": "217c03f8cc21f1f1ce3c361e8f1f72219d84e191",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "technote/gutenberg-package-versions": "^0.1.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Technote\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Technote",
+                    "email": "technote.space@gmail.com",
+                    "homepage": "https://technote.space"
+                }
+            ],
+            "description": "Library to get gutenberg package info",
+            "homepage": "https://github.com/technote-space/gutenberg-packages",
+            "keywords": [
+                "gutenberg",
+                "wordpress"
+            ],
+            "time": "2019-07-09T17:27:03+00:00"
+        },
+        {
             "name": "wp-content-framework/cache",
             "version": "v0.0.14",
             "source": {
@@ -247,20 +352,21 @@
         },
         {
             "name": "wp-content-framework/editor",
-            "version": "v0.0.4",
+            "version": "v0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/editor.git",
-                "reference": "c5b0f4c20424f656372c419f00070586040d6e32"
+                "reference": "921f38ab8eae85589738be64cc545740f3a151b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/c5b0f4c20424f656372c419f00070586040d6e32",
-                "reference": "c5b0f4c20424f656372c419f00070586040d6e32",
+                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/921f38ab8eae85589738be64cc545740f3a151b5",
+                "reference": "921f38ab8eae85589738be64cc545740f3a151b5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": ">=5.6.0",
+                "technote/gutenberg-packages": "^0.1"
             },
             "require-dev": {
                 "phake/phake": "~2.0",
@@ -284,7 +390,7 @@
                 "framework",
                 "wordpress"
             ],
-            "time": "2019-06-24T04:56:12+00:00"
+            "time": "2019-07-09T16:07:44+00:00"
         },
         {
             "name": "wp-content-framework/presenter",
@@ -1906,6 +2012,17 @@
         {
             "name": "roave/security-advisories",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roave/SecurityAdvisories.git",
+                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a53a6f855cbff7edb078f87c72bb808c89443a00",
+                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00",
+                "shasum": ""
+            },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.12",
