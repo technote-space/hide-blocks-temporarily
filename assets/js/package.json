@@ -3,8 +3,8 @@
   "version": "1.0.8",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
-    "start": "npm run build",
-    "test": "npm run lint && npm run cover",
+    "start": "yarn build",
+    "test": "yarn lint && yarn cover",
     "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
     "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --recursive",
     "develop": "webpack --mode development --config webpack.config.js",
@@ -14,11 +14,11 @@
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
     "@babel/register": "^7.4.4",
     "@wordpress/block-editor": "^2.2.0",
     "@wordpress/block-library": "^2.6.0",
@@ -40,16 +40,16 @@
     "eslint-plugin-react": "^7.14.2",
     "jsdom": "15.1.1",
     "jsdom-global": "3.0.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mocha": "^6.1.4",
     "mousetrap": "^1.6.3",
     "nyc": "^14.1.1",
     "should": "^13.2.3",
     "speed-measure-webpack-plugin": "^1.3.1",
-    "webpack": "^4.35.2",
+    "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "@technote-space/gutenberg-utils": "^1.0.19"
+    "@technote-space/gutenberg-utils": "^1.0.20"
   }
 }
