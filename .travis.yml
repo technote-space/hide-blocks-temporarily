@@ -35,9 +35,12 @@ stages:
   - name: deploy
     if: tag IS present
 
-before_script:
+before_install:
   - git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci
-  - bash travis-ci/bin/prepare.sh
+  - bash travis-ci/bin/before_install.sh
+
+before_script:
+  - bash travis-ci/bin/before_script.sh
 
 jobs:
   fast_finish: true
