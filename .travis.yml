@@ -217,10 +217,13 @@ jobs:
       language: node_js
       node_js: '11'
       dist: trusty
+      env:
+        - GH_PAGES_TITLE="Hide Block Temporarily"
+        - GH_PAGES_TEMPLATE=gutenberg
       script: skip
       before_deploy:
         - source tests/bin/deploy/env.sh
-        - bash tests/bin/deploy/gh-pages.sh gutenberg
+        - bash tests/bin/deploy/gh-pages.sh
       deploy:
         provider: pages
         skip_cleanup: true
