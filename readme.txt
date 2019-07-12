@@ -4,7 +4,7 @@ Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,7 @@ This plugin makes it easy to hides blocks temporarily.
 [日本語の説明](https://technote.space/hide-blocks-temporarily "Documentation in Japanese")
 [GitHub (More details)](https://github.com/technote-space/hide-blocks-temporarily)
 [Issues (Reporting a new bug or feature request)](https://github.com/technote-space/hide-blocks-temporarily/issues)
+[Demonstration](https://technote-space.github.io/hide-blocks-temporarily)
 
 This plugin needs PHP5.6 or higher.
 
@@ -33,6 +34,9 @@ This plugin needs PHP5.6 or higher.
 2. Remove all hide styles
 
 == Upgrade Notice ==
+
+= 1.0.10 =
+* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/69)
 
 = 1.0.9 =
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/67)
@@ -66,6 +70,12 @@ This plugin needs PHP5.6 or higher.
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/9)
 
 == Changelog ==
+
+= 1.0.10 (2019/7/12) =
+* Added: [Demo](https://github.com/technote-space/hide-blocks-temporarily/issues/88)
+* Added: [English readme](https://github.com/technote-space/hide-blocks-temporarily/issues/87)
+* Added: [Test pattern](https://github.com/technote-space/hide-blocks-temporarily/issues/89)
+* Fixed: small bug fixes
 
 = 1.0.9 (2019/6/27) =
 * Improved: [Refactor CI scripts](https://github.com/technote-space/hide-blocks-temporarily/issues/65)
