@@ -30,7 +30,7 @@
     "setup": [
       "composer install --no-dev",
       "yarn --audit --prefix assets/js install",
-      "yarn --prefix assets/js build"
+      "yarn --cwd assets/js build"
     ],
     "test": [
       "@phpcs",
