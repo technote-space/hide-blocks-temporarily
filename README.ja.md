@@ -12,41 +12,41 @@
 
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
-This plugin makes it easy to hides blocks temporarily.  
+このプラグインはブロックを一時的に隠すのを容易にします。  
 
-[WordPress Plugin Page](https://wordpress.org/plugins/hide-blocks-temporarily/)
+[WordPress公式ディレクトリ](https://wordpress.org/plugins/hide-blocks-temporarily/)
 
-[Demonstration](https://technote-space.github.io/hide-blocks-temporarily)
+[デモ](https://technote-space.github.io/hide-blocks-temporarily)
 
-## Screenshot
-### Behavior
-![Behavior](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-1.gif)
+## スクリーンショット
+### 動作
+![動作](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-1.gif)
 
-## Requirement
-- \>= PHP 5.6
-- \>= WordPress v5.0
+## 要件
+- PHP 5.6 以上
+- WordPress v5.0 以上
 
-## Installation
-1. Login to you WP admin page and go to **Plugins** > **Add New**.  
+## 導入手順
+1. 管理画面のプラグインから「新規追加」  
 ![step1](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/add.png)  
-2. Search by **Change Block Keywords** and press **Install Now** button.  
+2. 「Hide Blocks Temporarily」で検索し「今すぐインストール」を押下  
 ![step2](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/search.png)
-3. **Activate** 
+3. 「有効化」  
 
-## Usage
-### Hide block
-1. Select the block which you want to hide.  
+## 使用方法
+### 非表示にする
+1. 非表示にしたいブロックを選択  
 ![Select block](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/select-block.png)  
-2. Select **Hidden** from **Styles** in the sidebar.  
+2. サイドバーの『スタイル』から『非表示』を選択  
 ![Sidebar](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/sidebar.png)
-### Remove all hide styles
-1. Click on the top right three-point reader.  
-2. Click **Remove All Hide Styles** button.  
+### 全ての非表示を解除する
+1. 右上の三点リーダーをクリック  
+2. 『全ての非表示を解除』を選択  
 ![Remove All Hide Styles](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-2.png)
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)
 
-## Plugin framework
+## プラグイン作成用フレームワーク
 [WP Content Framework](https://github.com/wp-content-framework/core)
