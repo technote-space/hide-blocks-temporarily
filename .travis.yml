@@ -22,6 +22,7 @@ cache:
     - "${HOME}/.composer/cache"
     - node_modules
     - "${TRAVIS_BUILD_DIR}/.plugin"
+    - "${TRAVIS_BUILD_DIR}/.work/cache"
 
 stages:
   - name: check
@@ -211,6 +212,23 @@ jobs:
         script: bash travis-ci/bin/deploy/wp-release.sh
         on:
           tags: true
+
+    - stage: deploy
+      language: node_js
+      node_js: '11'
+      dist: trusty
+      script: skip
+      before_deploy:
+        - source tests/bin/deploy/env.sh
+        - bash tests/bin/deploy/gh-pages.sh gutenberg
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: ${GITHUB_TOKEN}
+        keep_history: true
+        local_dir: ${GH_PAGES_DIR}
+        on:
+          branch: master
 
   allow_failures:
     - env: WP_VERSION=4.9

@@ -29,6 +29,7 @@ logs
 /coverage
 /vendor
 /travis-ci
+/gh-pages
 
 /.coveralls.yml
 /phpcs.xml
@@ -37,3 +38,4 @@ logs
 /tests/bootstrap.php
 /.plugin
 composer.lock
+!/bin
