@@ -29,7 +29,7 @@
   "scripts": {
     "setup": [
       "composer install --no-dev",
-      "yarn --audit --prefix assets/js install",
+      "yarn --audit --cwd assets/js install",
       "yarn --cwd assets/js build"
     ],
     "test": [
