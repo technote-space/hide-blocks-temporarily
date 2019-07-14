@@ -34,7 +34,7 @@
     "@wordpress/server-side-render": "^1.0.0",
     "@wordpress/url": "^2.6.0",
     "babel-loader": "^8.0.6",
-    "coveralls": "^3.0.4",
+    "coveralls": "^3.0.5",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "eslint": "^6.0.1",
     "eslint-plugin-react": "^7.14.2",
