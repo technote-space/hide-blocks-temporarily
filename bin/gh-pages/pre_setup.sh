@@ -12,5 +12,5 @@ pwd)
 SCRIPT_DIR=${1}
 source ${SCRIPT_DIR}/variables.sh
 
-cp -f ${current}/plugin.js ${CACHE_WORK_DIR}/playground/
-cp -f ${current}/plugin.scss ${CACHE_WORK_DIR}/playground/
+cp -f ${current}/plugin.js ${GH_WORK_DIR}/
+cp -f ${current}/plugin.scss ${GH_WORK_DIR}/

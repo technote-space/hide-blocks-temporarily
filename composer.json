@@ -64,7 +64,7 @@
     "bin:diff": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_REPO_SLUG=technote-space/hide-blocks-temporarily TRAVIS_TAG=v1.2.3 source ./travis-ci/bin/deploy/env.sh && bash ./travis-ci/bin/deploy/wp-check-diff.sh",
     "bin:download": "mkdir -p ./travis-ci/.git && chmod -R +w ./travis-ci/.git && rm -rdf ./travis-ci && rm -f ./tests/bootstrap.php ./.coveralls.yml ./phpcs.xml ./phpmd.xml phpunit.xml && git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci",
     "bin:prepare": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) ACTIVATE_POPULAR_PLUGINS=1 bash ./travis-ci/bin/prepare.sh",
-    "bin:gh-pages": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) GH_PAGES_TITLE='Hide Block Temporarily' GH_PAGES_TEMPLATE=gutenberg bash ./travis-ci/bin/deploy/gh-pages.sh"
+    "bin:gh-pages": "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) GH_PAGES_PLUGIN_SCRIPT='./index.min.js' GH_PAGES_PLUGIN_STYLE='./index.css' GH_PAGES_TITLE='Hide Blocks Temporarily' GH_PAGES_TEMPLATE=gutenberg bash ./travis-ci/bin/deploy/gh-pages.sh"
   },
   "config": {
     "process-timeout": 1200
