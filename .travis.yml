@@ -222,6 +222,7 @@ jobs:
         - GH_PAGES_PLUGIN_STYLE="./index.css"
         - GH_PAGES_TITLE="Hide Block Temporarily"
         - GH_PAGES_TEMPLATE=gutenberg
+        - GH_PAGES_TRACKING_ID=UA-78163306-3
       script: skip
       before_deploy:
         - source tests/bin/deploy/env.sh
