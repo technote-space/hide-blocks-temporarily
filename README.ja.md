@@ -14,7 +14,7 @@
 
 このプラグインはブロックを一時的に隠すのを容易にします。  
 
-[WordPress公式ディレクトリ](https://wordpress.org/plugins/hide-blocks-temporarily/)
+[WordPress公式ディレクトリ](https://ja.wordpress.org/plugins/hide-blocks-temporarily/)
 
 [デモ](https://technote-space.github.io/hide-blocks-temporarily)
 
