@@ -71,7 +71,7 @@ This plugin needs PHP5.6 or higher.
 
 == Changelog ==
 
-= 1.0.10 (2019/7/14) =
+= 1.0.10 (2019/7/15) =
 * Added: [Demo](https://github.com/technote-space/hide-blocks-temporarily/issues/88)
 * Added: [English readme](https://github.com/technote-space/hide-blocks-temporarily/issues/87)
 * Added: [Test pattern](https://github.com/technote-space/hide-blocks-temporarily/issues/89)
