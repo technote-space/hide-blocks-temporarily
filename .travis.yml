@@ -225,8 +225,8 @@ jobs:
         - GH_PAGES_TRACKING_ID=UA-78163306-3
       script: skip
       before_deploy:
-        - source tests/bin/deploy/env.sh
-        - bash tests/bin/deploy/gh-pages.sh
+        - source travis-ci/bin/deploy/env.sh
+        - bash travis-ci/bin/deploy/gh-pages.sh
       deploy:
         provider: pages
         skip_cleanup: true
