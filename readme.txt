@@ -4,7 +4,7 @@ Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 1.0.10
+Stable tag: 1.1.0
 Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,5 +33,3 @@ This plugin needs PHP5.6 or higher.
 == Upgrade Notice ==
 
 == Changelog ==
-
-= 1.0.10 (2019/7/15) =
