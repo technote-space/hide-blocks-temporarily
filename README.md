@@ -24,11 +24,11 @@ This plugin makes it easy to hides blocks temporarily.
 - \>= WordPress v5.0
 
 ## Installation
-1. Login to you WP admin page and go to **Plugins** > **Add New**.  
-![step1](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/add.png)  
-2. Search by **Change Block Keywords** and press **Install Now** button.  
-![step2](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/search.png)
-3. **Activate** 
+1. Download latest version  
+[hide-blocks-temporarily.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+2. Install plugin
+![install](https://raw.githubusercontent.com/technote-space/screenshots/master/misc/install-wp-plugin.png)
+3. Activate plugin
 
 ## Usage
 ### Hide block

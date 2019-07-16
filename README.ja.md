@@ -24,11 +24,11 @@
 - WordPress v5.0 以上
 
 ## 導入手順
-1. 管理画面のプラグインから「新規追加」  
-![step1](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/add.png)  
-2. 「Hide Blocks Temporarily」で検索し「今すぐインストール」を押下  
-![step2](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/search.png)
-3. 「有効化」  
+1. 最新版をGitHubからダウンロード  
+[hide-blocks-temporarily.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+2. 「プラグインのアップロード」からインストール
+![install](https://raw.githubusercontent.com/technote-space/screenshots/master/misc/install-wp-plugin.png)
+3. プラグインを有効化 
 
 ## 使用方法
 ### 非表示にする

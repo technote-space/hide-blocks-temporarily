@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Hide Blocks Temporarily
- * Plugin URI: https://wordpress.org/plugins/hide-blocks-temporarily/
+ * Plugin URI: https://github.com/technote-space/hide-blocks-temporarily/
  * Description: This plugin makes it easy to hides blocks temporarily.
  * Author: Technote
  * Version: 1.0.10
