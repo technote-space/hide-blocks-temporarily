@@ -31,8 +31,8 @@ stages:
     if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: test trunk
     if: branch = master and tag IS blank and type IN (pull_request, api, cron)
-  - name: prepare
-    if: branch = master and tag IS blank and type IN (pull_request, api)
+#  - name: prepare
+#    if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: deploy
     if: tag IS present
 
@@ -169,13 +169,13 @@ jobs:
       script: bash travis-ci/bin/php/wp-test.sh
 
 
-    - stage: prepare
-      language: node_js
-      node_js: '11'
-      dist: trusty
-      script:
-        - source travis-ci/bin/deploy/env.sh
-        - bash travis-ci/bin/deploy/wp-check-diff.sh
+#    - stage: prepare
+#      language: node_js
+#      node_js: '11'
+#      dist: trusty
+#      script:
+#        - source travis-ci/bin/deploy/env.sh
+#        - bash travis-ci/bin/deploy/wp-check-diff.sh
 
 
     - stage: deploy
@@ -199,19 +199,19 @@ jobs:
         on:
           tags: true
 
-    - stage: deploy
-      language: node_js
-      node_js: '11'
-      dist: trusty
-      script: skip
-      before_deploy:
-        - source travis-ci/bin/deploy/env.sh
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script: bash travis-ci/bin/deploy/wp-release.sh
-        on:
-          tags: true
+#    - stage: deploy
+#      language: node_js
+#      node_js: '11'
+#      dist: trusty
+#      script: skip
+#      before_deploy:
+#        - source travis-ci/bin/deploy/env.sh
+#      deploy:
+#        provider: script
+#        skip_cleanup: true
+#        script: bash travis-ci/bin/deploy/wp-release.sh
+#        on:
+#          tags: true
 
     - stage: deploy
       language: node_js
