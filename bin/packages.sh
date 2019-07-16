@@ -4,4 +4,5 @@ set -e
 
 packages+=( "wp-content-framework/core" )
 packages+=( "wp-content-framework/update" )
+packages+=( "wp-content-framework/update_check" )
 packages+=( "wp-content-framework/editor" )
