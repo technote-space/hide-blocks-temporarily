@@ -5,16 +5,13 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily/badge)](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![PHP: >=5.6](https://img.shields.io/badge/PHP-%3E%3D5.6-orange.svg)](http://php.net/)
-![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/hide-blocks-temporarily.svg)
-![WordPress Plugin: Tested WP Version](https://img.shields.io/wordpress/plugin/tested/hide-blocks-temporarily.svg)
+[![WordPress: >=5.0](https://img.shields.io/badge/WordPress-%3E%3D5.0-brightgreen.svg)](https://wordpress.org/)
 
 ![banner](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/banner-772x250.png)
 
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
 This plugin makes it easy to hides blocks temporarily.  
-
-[WordPress Plugin Page](https://wordpress.org/plugins/hide-blocks-temporarily/)
 
 [Demonstration](https://technote-space.github.io/hide-blocks-temporarily)
 
@@ -27,11 +24,11 @@ This plugin makes it easy to hides blocks temporarily.
 - \>= WordPress v5.0
 
 ## Installation
-1. Login to you WP admin page and go to **Plugins** > **Add New**.  
-![step1](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/add.png)  
-2. Search by **Change Block Keywords** and press **Install Now** button.  
-![step2](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/search.png)
-3. **Activate** 
+1. Download latest version  
+[hide-blocks-temporarily.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+2. Install plugin
+![install](https://raw.githubusercontent.com/technote-space/screenshots/master/misc/install-wp-plugin.png)
+3. Activate plugin
 
 ## Usage
 ### Hide block
