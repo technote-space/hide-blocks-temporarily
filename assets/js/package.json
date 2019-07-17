@@ -1,6 +1,6 @@
 {
   "name": "hide-blocks-temporarily",
-  "version": "1.0.10",
+  "version": "1.1.1",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
     "start": "yarn build",
