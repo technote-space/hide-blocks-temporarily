@@ -15,6 +15,8 @@
 
 [デモ](https://technote-space.github.io/hide-blocks-temporarily)
 
+[最新バージョン](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+
 ## スクリーンショット
 ### 動作
 ![動作](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/screenshot-1.gif)
