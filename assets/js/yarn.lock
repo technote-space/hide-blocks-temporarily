@@ -2,7 +2,14 @@
 # yarn lockfile v1
 
 
-"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
+"@babel/code-frame@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
+  integrity sha512-OfC2uemaknXr87bdLUkWog7nYuliM9Ij5HUcajsVcMCpQrcLmtxRbVFTIqmcSkSeYRBFBRxs2FiUqFJDLdiebA==
+  dependencies:
+    "@babel/highlight" "^7.0.0"
+
+"@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
   integrity sha512-27d4lZoomVyo51VegxI20xZPuSHusqbQag/ztrBC7wegWoQ1nLREPVSKSW8byhTlzTKyNE4ifaTA6lCp7JjpFw==
@@ -756,10 +763,10 @@
   resolved "https://registry.yarnpkg.com/@tannin/postfix/-/postfix-1.0.2.tgz#fbb723e79603add30f5d8a08a626c2970d984857"
   integrity sha512-Nggtk7/ljfNPpAX8CjxxLkMKuO6u2gH1ozmTvGclWF2pNcxTf6YGghYNYNWZRKrimXGhQ8yZqvAHep7h80K04g==
 
-"@technote-space/gutenberg-utils@^1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.24.tgz#4b4cca1c74e61e0347ab75bb4ed348742a289514"
-  integrity sha512-1QLGqAI7Hbyrp9mgEaathuza3+Wk4rvnR9zQPvHNOAiplF8zKW/DpmFiOCU/1BXWZjFjMgqsxZxFDZpsfGO1VA==
+"@technote-space/gutenberg-utils@^1.0.25":
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.25.tgz#f53e62e20e9f2e5673d9d3a463b16ced549901dc"
+  integrity sha512-0vT3uXzu6g3FSwWnLyT8DuLjF0hALsyiD4b3X/L2peysh3W+CMWGGYO3vFLTHolG1dXsOnmgnt+OPqrlwJYVRQ==
   dependencies:
     classnames "^2.2.6"
 
@@ -4075,10 +4082,20 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4:
+lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4:
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
+  integrity sha512-vm3/XWXfWtRua0FkUyEHBZy8kCPjErNBT9fJx8Zvs+U6zjqPbTUOpkaoum3O5uiA8sm+yNMHXfYkTUHFoMxFNA==
+
+lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@^4.17.13:
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 log-driver@^1.2.7:
   version "1.2.7"
