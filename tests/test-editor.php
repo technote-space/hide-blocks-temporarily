@@ -2,11 +2,17 @@
 /**
  * Class EditorTest
  *
- * @package Test_Travis
+ * @package Tests
  */
+
+namespace Tests;
 
 use Hide_Blocks_Temporarily\Classes\Models\Editor;
 use PHPUnit\Framework\TestCase;
+use ReflectionClass;
+use ReflectionException;
+use WP_Framework;
+use WP_UnitTestCase;
 
 /**
  * @noinspection PhpUndefinedClassInspection
