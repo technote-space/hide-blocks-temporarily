@@ -756,10 +756,10 @@
   resolved "https://registry.yarnpkg.com/@tannin/postfix/-/postfix-1.0.2.tgz#fbb723e79603add30f5d8a08a626c2970d984857"
   integrity sha512-Nggtk7/ljfNPpAX8CjxxLkMKuO6u2gH1ozmTvGclWF2pNcxTf6YGghYNYNWZRKrimXGhQ8yZqvAHep7h80K04g==
 
-"@technote-space/gutenberg-utils@^1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.24.tgz#4b4cca1c74e61e0347ab75bb4ed348742a289514"
-  integrity sha512-1QLGqAI7Hbyrp9mgEaathuza3+Wk4rvnR9zQPvHNOAiplF8zKW/DpmFiOCU/1BXWZjFjMgqsxZxFDZpsfGO1VA==
+"@technote-space/gutenberg-utils@^1.0.26":
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.26.tgz#8911608b5a3c848a6d2713da9259c4fa18f7470b"
+  integrity sha512-CLGzHqBWx8Wx/ffH6P3YZ9TaXvi73nPGnlFCwgp/0mSCi2Sotq+shuvNzcErmAlGPFsfq+nqRXryZzGME3nksA==
   dependencies:
     classnames "^2.2.6"
 
