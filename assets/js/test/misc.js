@@ -2,7 +2,7 @@ require( 'should' );
 
 import { isTargetBlockType } from '../src/utils';
 
-describe( 'isTargetBlockType test', () => {
+describe( 'isTargetBlockType', () => {
 	it( 'should true if target block', () => {
 		isTargetBlockType( { name: 'core/paragraph', attributes: { className: { type: 'string' } } } ).should.equal( true );
 		isTargetBlockType( { name: 'core/heading', attributes: { className: { type: 'string' } } } ).should.equal( true );

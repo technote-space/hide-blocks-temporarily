@@ -1,49 +1,63 @@
 import { Helpers } from '@technote-space/gutenberg-utils';
 
 const { dispatch, select } = wp.data;
-const { filter, isEmpty } = window.lodash;
 const { getEditorStoreKey } = Helpers;
-
-/**
- * @param {object} setting setting
- * @returns {boolean} whether to have default setting or not
- */
-export function blockHasDefault( setting ) {
-	return ! isEmpty( setting.styles ) && ! isEmpty( filter( setting.styles, [ 'isDefault', true ] ) );
-}
 
 /**
  * remove hidden class
  */
-export function removeHiddenClassFromBlocks() {
+export const removeHiddenClassFromBlocks = () => {
 	getHasClassNameBlocks().forEach( block => dispatch( getEditorStoreKey() ).updateBlock( block.clientId, {
 		attributes: {
 			className: removeHiddenClass( block.attributes.className ),
 		},
 	} ) );
-}
+};
 
 /**
  * @param {object} block block
  * @returns {boolean} whether to have class name or not
  */
-function hasClassName( block ) {
-	return block.attributes && block.attributes.className;
-}
+const hasClassName = block => block.attributes && block.attributes.className;
 
 /**
  * @returns {array} filtered blocks
  */
-function getHasClassNameBlocks() {
-	return select( getEditorStoreKey() ).getBlocks().filter( block => {
-		return hasClassName( block );
-	} );
-}
+const getHasClassNameBlocks = () => select( getEditorStoreKey() ).getBlocks().filter( block => {
+	return hasClassName( block );
+} );
+
+/**
+ * @returns {string} hidden class
+ */
+const getHiddenClass = () => 'is-style-hidden';
+
+/**
+ * @param {*} value value
+ * @returns {string} string
+ */
+const stringify = value => typeof value !== 'string' ? '' : value;
 
 /**
  * @param {string} className class name
  * @returns {string} class name
  */
-function removeHiddenClass( className ) {
-	return className.split( ' ' ).filter( name => name !== 'is-style-hidden' ).join( ' ' );
-}
+const removeHiddenClass = className => stringify( className ).split( ' ' ).filter( name => name !== getHiddenClass() ).join( ' ' );
+
+/**
+ * @param {string} className class name
+ * @returns {string} class name
+ */
+const addHiddenClass = className => ( removeHiddenClass( className ) + ' ' + getHiddenClass() ).trim();
+
+/**
+ * @param {string} className class name
+ * @returns {string} class name
+ */
+export const toggleHiddenClass = className => hasHiddenClass( className ) ? removeHiddenClass( className ) : addHiddenClass( className );
+
+/**
+ * @param {string} className class name
+ * @returns {boolean} result
+ */
+export const hasHiddenClass = className => stringify( className ).split( ' ' ).includes( getHiddenClass() );

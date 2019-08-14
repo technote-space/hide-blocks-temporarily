@@ -1,31 +1,38 @@
 /* eslint-disable no-magic-numbers */
 require( 'should' );
-import { blockHasDefault, removeHiddenClassFromBlocks } from '../src/utils';
+import { removeHiddenClassFromBlocks, hasHiddenClass, toggleHiddenClass } from '../src/utils';
 
 const { select } = wp.data;
 
-describe( 'blockHasDefault test', () => {
-	it( 'should return false if not have default', () => {
-		blockHasDefault( {} ).should.equal( false );
-		blockHasDefault( { styles: [] } ).should.equal( false );
-		blockHasDefault( {
-			styles: [
-				{ isDefault: false },
-			],
-		} ).should.equal( false );
+describe( 'hasHiddenClass', () => {
+	it( 'should return true', () => {
+		hasHiddenClass( 'is-style-hidden' ).should.true();
+		hasHiddenClass( 'abc is-style-hidden xyz' ).should.true();
 	} );
 
-	it( 'should return true if have default', () => {
-		blockHasDefault( {
-			styles: [
-				{ isDefault: false },
-				{ isDefault: true },
-			],
-		} ).should.equal( true );
+	it( 'should return false', () => {
+		hasHiddenClass( '' ).should.false();
+		hasHiddenClass( undefined ).should.false();
+		hasHiddenClass( 'abc xyz' ).should.false();
 	} );
 } );
 
-describe( 'removeHiddenClassFromBlocks test', () => {
+describe( 'toggleHiddenClass', () => {
+	it( 'should add hidden class', () => {
+		toggleHiddenClass( '' ).should.match( /^is-style-hidden$/ );
+		toggleHiddenClass( undefined ).should.match( /^is-style-hidden$/ );
+		toggleHiddenClass( 'abc xyz' ).should.match( /^abc xyz is-style-hidden$/ );
+	} );
+
+	it( 'should remove hidden class', () => {
+		toggleHiddenClass( 'is-style-hidden' ).should.match( /^$/ );
+		toggleHiddenClass( 'abc xyz is-style-hidden' ).should.match( /^abc xyz$/ );
+		toggleHiddenClass( 'is-style-hidden abc xyz' ).should.match( /^abc xyz$/ );
+		toggleHiddenClass( 'abc is-style-hidden xyz' ).should.match( /^abc xyz$/ );
+	} );
+} );
+
+describe( 'removeHiddenClassFromBlocks', () => {
 	it( 'should return test data', () => {
 		const blocks = select( 'core/block-editor' ).getBlocks();
 		blocks.should.have.length( 5 );
