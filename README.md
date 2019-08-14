@@ -36,7 +36,7 @@ This plugin makes it easy to hides blocks temporarily.
 ### Hide block
 1. Select the block which you want to hide.  
 ![Select block](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/select-block.png)  
-2. Select **Hidden** from **Styles** in the sidebar.  
+2. Toggle **Hidden** setting in the sidebar.  
 ![Sidebar](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/sidebar.png)
 ### Remove all hide styles
 1. Click on the top right three-point reader.  

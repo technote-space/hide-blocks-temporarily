@@ -1,3 +1,3 @@
 export { getNamespace } from './hooks';
-export { blockHasDefault, removeHiddenClassFromBlocks } from './block';
+export { removeHiddenClassFromBlocks, toggleHiddenClass, hasHiddenClass } from './block';
 export { isTargetBlockType } from './misc';

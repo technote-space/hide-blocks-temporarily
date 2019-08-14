@@ -36,7 +36,7 @@
 ### 非表示にする
 1. 非表示にしたいブロックを選択  
 ![Select block](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/select-block.png)  
-2. サイドバーの『スタイル』から『非表示』を選択  
+2. サイドバーから『非表示』設定を切り替え  
 ![Sidebar](https://raw.githubusercontent.com/technote-space/hide-blocks-temporarily/images/assets/sidebar.png)
 ### 全ての非表示を解除する
 1. 右上の三点リーダーをクリック  

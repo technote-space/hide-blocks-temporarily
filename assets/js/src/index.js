@@ -1,36 +1,43 @@
 import { Components, Helpers } from '@technote-space/gutenberg-utils';
 import { PLUGIN_NAME, PLUGIN_ICON } from './constant';
-import { getNamespace, blockHasDefault, removeHiddenClassFromBlocks, isTargetBlockType } from './utils';
+import { getNamespace, toggleHiddenClass, hasHiddenClass, removeHiddenClassFromBlocks, isTargetBlockType } from './utils';
 
 const { addFilter } = wp.hooks;
-const { registerBlockStyle } = wp.blocks;
 const { registerPlugin } = wp.plugins;
 const { PluginMoreMenuItem } = wp.editPost;
-const { __ } = wp.i18n;
 const { Icon } = Components;
-const { getTranslator } = Helpers;
+const { getTranslator, getEditor } = Helpers;
 const translate = getTranslator( hbtParams );
+const { createHigherOrderComponent } = wp.compose;
+const { Fragment } = wp.element;
+const { ToggleControl, PanelBody } = wp.components;
+const { InspectorControls } = getEditor();
 
 addFilter(
-	'blocks.registerBlockType',
+	'editor.BlockEdit',
 	getNamespace( 'register-hide-block-style' ),
-	( setting, name ) => {
-		if ( ! isTargetBlockType( setting ) ) {
-			return setting;
+	createHigherOrderComponent( BlockEdit => props => {
+		if ( ! isTargetBlockType( props ) ) {
+			return <BlockEdit { ...props }/>;
 		}
-		if ( ! blockHasDefault( setting ) ) {
-			registerBlockStyle( name, {
-				name: 'default',
-				label: __( 'Default' ),
-				isDefault: true,
-			} );
-		}
-		registerBlockStyle( name, {
-			name: 'hidden',
-			label: translate( 'Hidden' ),
-		} );
-		return setting;
-	},
+
+		const toggle = () => {
+			const { attributes, setAttributes } = props;
+			setAttributes( { className: toggleHiddenClass( attributes.className ) } );
+		};
+		return <Fragment>
+			<BlockEdit { ...props }/>
+			<InspectorControls>
+				<PanelBody title={ translate( 'Hidden' ) }>
+					<ToggleControl
+						label={ translate( 'Hidden' ) }
+						checked={ hasHiddenClass( props.attributes.className ) }
+						onChange={ toggle }
+					/>
+				</PanelBody>
+			</InspectorControls>
+		</Fragment>;
+	} ),
 );
 
 registerPlugin( PLUGIN_NAME, {
