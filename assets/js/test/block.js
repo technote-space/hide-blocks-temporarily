@@ -12,6 +12,7 @@ describe( 'hasHiddenClass', () => {
 
 	it( 'should return false', () => {
 		hasHiddenClass( '' ).should.false();
+		hasHiddenClass( undefined ).should.false();
 		hasHiddenClass( 'abc xyz' ).should.false();
 	} );
 } );
@@ -19,6 +20,7 @@ describe( 'hasHiddenClass', () => {
 describe( 'toggleHiddenClass', () => {
 	it( 'should add hidden class', () => {
 		toggleHiddenClass( '' ).should.match( /^is-style-hidden$/ );
+		toggleHiddenClass( undefined ).should.match( /^is-style-hidden$/ );
 		toggleHiddenClass( 'abc xyz' ).should.match( /^abc xyz is-style-hidden$/ );
 	} );
 

@@ -11,13 +11,14 @@ const translate = getTranslator( hbtParams );
 const { createHigherOrderComponent } = wp.compose;
 const { Fragment } = wp.element;
 const { ToggleControl, PanelBody } = wp.components;
+const { select } = wp.data;
 const { InspectorControls } = getEditor();
 
 addFilter(
 	'editor.BlockEdit',
 	getNamespace( 'register-hide-block-style' ),
 	createHigherOrderComponent( BlockEdit => props => {
-		if ( ! isTargetBlockType( props ) ) {
+		if ( ! isTargetBlockType( select( 'core/blocks' ).getBlockType( props.name ) ) ) {
 			return <BlockEdit { ...props }/>;
 		}
 

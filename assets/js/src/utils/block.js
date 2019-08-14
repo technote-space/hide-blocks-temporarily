@@ -33,16 +33,22 @@ const getHasClassNameBlocks = () => select( getEditorStoreKey() ).getBlocks().fi
 const getHiddenClass = () => 'is-style-hidden';
 
 /**
- * @param {string} className class name
- * @returns {string} class name
+ * @param {*} value value
+ * @returns {string} string
  */
-const removeHiddenClass = className => className.split( ' ' ).filter( name => name !== getHiddenClass() ).join( ' ' );
+const stringify = value => typeof value !== 'string' ? '' : value;
 
 /**
  * @param {string} className class name
  * @returns {string} class name
  */
-const addHiddenClass = className => (removeHiddenClass( className ) + ' ' + getHiddenClass()).trim();
+const removeHiddenClass = className => stringify( className ).split( ' ' ).filter( name => name !== getHiddenClass() ).join( ' ' );
+
+/**
+ * @param {string} className class name
+ * @returns {string} class name
+ */
+const addHiddenClass = className => ( removeHiddenClass( className ) + ' ' + getHiddenClass() ).trim();
 
 /**
  * @param {string} className class name
@@ -54,4 +60,4 @@ export const toggleHiddenClass = className => hasHiddenClass( className ) ? remo
  * @param {string} className class name
  * @returns {boolean} result
  */
-export const hasHiddenClass = className => className.split( ' ' ).includes( getHiddenClass() );
+export const hasHiddenClass = className => stringify( className ).split( ' ' ).includes( getHiddenClass() );
