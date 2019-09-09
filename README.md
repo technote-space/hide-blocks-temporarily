@@ -1,5 +1,6 @@
 # Hide Blocks Temporarily
 
+[![Build Status](https://github.com/technote-space/hide-blocks-temporarily/workflows/Build/badge.svg)](https://github.com/technote-space/hide-blocks-temporarily/actions)
 [![Build Status](https://travis-ci.com/technote-space/hide-blocks-temporarily.svg?branch=master)](https://travis-ci.com/technote-space/hide-blocks-temporarily)
 [![Coverage Status](https://coveralls.io/repos/github/technote-space/hide-blocks-temporarily/badge.svg?branch=master)](https://coveralls.io/github/technote-space/hide-blocks-temporarily?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily/badge)](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily)
@@ -15,7 +16,23 @@ This plugin makes it easy to hides blocks temporarily.
 
 [Demonstration](https://technote-space.github.io/hide-blocks-temporarily)
 
-[Latest version](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+[Latest version](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Screenshot](#screenshot)
+  - [Behavior](#behavior)
+- [Requirement](#requirement)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Hide block](#hide-block)
+  - [Remove all hide styles](#remove-all-hide-styles)
+- [Author](#author)
+- [Plugin framework](#plugin-framework)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Screenshot
 ### Behavior
@@ -27,7 +44,7 @@ This plugin makes it easy to hides blocks temporarily.
 
 ## Installation
 1. Download latest version  
-[hide-blocks-temporarily.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+[release.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
 2. Install plugin
 ![install](https://raw.githubusercontent.com/technote-space/screenshots/master/misc/install-wp-plugin.png)
 3. Activate plugin
