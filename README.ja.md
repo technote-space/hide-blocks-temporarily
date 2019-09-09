@@ -18,8 +18,21 @@
 
 [最新バージョン](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [スクリーンショット](#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88)
+  - [動作](#%E5%8B%95%E4%BD%9C)
+- [要件](#%E8%A6%81%E4%BB%B6)
+- [導入手順](#%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86)
+- [使用方法](#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+  - [非表示にする](#%E9%9D%9E%E8%A1%A8%E7%A4%BA%E3%81%AB%E3%81%99%E3%82%8B)
+  - [全ての非表示を解除する](#%E5%85%A8%E3%81%A6%E3%81%AE%E9%9D%9E%E8%A1%A8%E7%A4%BA%E3%82%92%E8%A7%A3%E9%99%A4%E3%81%99%E3%82%8B)
+- [Author](#author)
+- [プラグイン作成用フレームワーク](#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## スクリーンショット
 ### 動作
