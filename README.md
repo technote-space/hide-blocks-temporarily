@@ -18,8 +18,21 @@ This plugin makes it easy to hides blocks temporarily.
 
 [Latest version](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Screenshot](#screenshot)
+  - [Behavior](#behavior)
+- [Requirement](#requirement)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Hide block](#hide-block)
+  - [Remove all hide styles](#remove-all-hide-styles)
+- [Author](#author)
+- [Plugin framework](#plugin-framework)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Screenshot
 ### Behavior
