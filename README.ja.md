@@ -1,5 +1,6 @@
 # Hide Blocks Temporarily
 
+[![Build Status](https://github.com/technote-space/hide-blocks-temporarily/workflows/Build/badge.svg)](https://github.com/technote-space/hide-blocks-temporarily/actions)
 [![Build Status](https://travis-ci.com/technote-space/hide-blocks-temporarily.svg?branch=master)](https://travis-ci.com/technote-space/hide-blocks-temporarily)
 [![Coverage Status](https://coveralls.io/repos/github/technote-space/hide-blocks-temporarily/badge.svg?branch=master)](https://coveralls.io/github/technote-space/hide-blocks-temporarily?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily/badge)](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily)
@@ -15,7 +16,10 @@
 
 [デモ](https://technote-space.github.io/hide-blocks-temporarily)
 
-[最新バージョン](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+[最新バージョン](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
+
+<!-- START doctoc -->
+<!-- END doctoc -->
 
 ## スクリーンショット
 ### 動作
@@ -27,7 +31,7 @@
 
 ## 導入手順
 1. 最新版をGitHubからダウンロード  
-[hide-blocks-temporarily.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/hide-blocks-temporarily.zip)
+[release.zip](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
 2. 「プラグインのアップロード」からインストール
 ![install](https://raw.githubusercontent.com/technote-space/screenshots/master/misc/install-wp-plugin.png)
 3. プラグインを有効化 
