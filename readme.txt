@@ -34,7 +34,7 @@ This plugin needs PHP5.6 or higher.
 
 = 1.2.0 =
 * GitHub Actions の導入 [詳細](https://github.com/technote-space/hide-blocks-temporarily/issues/139)
-* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/71)
+* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/143)
 
 = 1.0.10 =
 * [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/69)
