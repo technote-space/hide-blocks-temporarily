@@ -3,7 +3,7 @@
 [fork]: https://github.com/technote-space/hide-blocks-temporarily/fork
 [pr]: https://github.com/technote-space/hide-blocks-temporarily/compare
 [eslint]: https://eslint.org/
-[mocha]: https://mochajs.org/
+[jest]: https://jestjs.io/
 [phpcs]: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage
 [phpmd]: https://phpmd.org/documentation/index.html
 [wp-test]: https://developer.wordpress.org/cli/commands/scaffold/plugin-tests/
@@ -25,7 +25,7 @@ Please note we have a [Contributor Code of Conduct][code-of-conduct], please fol
    - [`PHPMD`][phpmd]
    - [`WordPress Plugin Tests`][wp-test]
    - [`ESLint`][eslint]
-   - [`Mocha`][mocha]
+   - [`Jest`][jest]
    - `Build test`
 1. Create a new branch: `git checkout -b my-branch-name`
 1. Make your change, add tests, and make sure the tests still pass.
