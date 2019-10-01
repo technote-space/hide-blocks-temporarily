@@ -24,7 +24,7 @@
     "@babel/polyfill": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/register": "^7.6.0",
-    "@technote-space/gutenberg-utils": "^1.1.2",
+    "@technote-space/gutenberg-utils": "^1.2.5",
     "babel-loader": "^8.0.6",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "speed-measure-webpack-plugin": "^1.3.1",
