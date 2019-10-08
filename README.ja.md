@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/technote-space/hide-blocks-temporarily/workflows/Build/badge.svg)](https://github.com/technote-space/hide-blocks-temporarily/actions)
 [![Build Status](https://travis-ci.com/technote-space/hide-blocks-temporarily.svg?branch=master)](https://travis-ci.com/technote-space/hide-blocks-temporarily)
-[![Coverage Status](https://coveralls.io/repos/github/technote-space/hide-blocks-temporarily/badge.svg?branch=master)](https://coveralls.io/github/technote-space/hide-blocks-temporarily?branch=master)
+[![codecov](https://codecov.io/gh/technote-space/hide-blocks-temporarily/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/hide-blocks-temporarily)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily/badge)](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![PHP: >=5.6](https://img.shields.io/badge/PHP-%3E%3D5.6-orange.svg)](http://php.net/)
