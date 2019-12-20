@@ -1,6 +1,6 @@
 # Hide Blocks Temporarily
 
-[![Build Status](https://github.com/technote-space/hide-blocks-temporarily/workflows/Build/badge.svg)](https://github.com/technote-space/hide-blocks-temporarily/actions)
+[![CI Status](https://github.com/technote-space/hide-blocks-temporarily/workflows/CI/badge.svg)](https://github.com/technote-space/hide-blocks-temporarily/actions)
 [![Build Status](https://travis-ci.com/technote-space/hide-blocks-temporarily.svg?branch=master)](https://travis-ci.com/technote-space/hide-blocks-temporarily)
 [![codecov](https://codecov.io/gh/technote-space/hide-blocks-temporarily/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/hide-blocks-temporarily)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily/badge)](https://www.codefactor.io/repository/github/technote-space/hide-blocks-temporarily)
