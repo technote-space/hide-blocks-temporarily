@@ -24,7 +24,7 @@
     "wp-content-framework/core": "^0.0.59",
     "wp-content-framework/update": "^0.0.8",
     "wp-content-framework/editor": "^0.0.7",
-    "wp-content-framework/update_check": "^0.0.5"
+    "wp-content-framework/update_check": "^0.0.6"
   },
   "scripts": {
     "setup": [
