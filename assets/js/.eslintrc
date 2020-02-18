@@ -107,7 +107,8 @@
 			"error",
 			"tab",
 			{
-				"MemberExpression": "off"
+				"MemberExpression": "off",
+				"SwitchCase": 1
 			}
 		],
 		"space-before-function-paren": [
