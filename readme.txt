@@ -34,7 +34,7 @@ This plugin needs PHP5.6 or higher.
 
 = 2.0.0 =
 * [[最新のバージョン(WP5.4)のみサポート]](color:red;font-weight:bold)
-* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/184)
+* [すべての差分](https://github.com/technote-space/hide-blocks-temporarily/pull/247)
 
 == Changelog ==
 
