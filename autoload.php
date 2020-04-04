@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/technote-space/hide-blocks-temporarily/
  * Description: This plugin makes it easy to hides blocks temporarily.
  * Author: Technote
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author URI: https://technote.space
  * Text Domain: hide-blocks-temporarily
  * Domain Path: /languages/
