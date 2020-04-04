@@ -1,6 +1,6 @@
 import { setupGlobal } from '@technote-space/gutenberg-test-helper';
 
-setupGlobal( {
+setupGlobal({
 	setUseRefMock: false,
 	globalParams: {
 		hbtParams: {
@@ -16,10 +16,10 @@ setupGlobal( {
 			{ className: 'test1' },
 			{ className: 'test2 is-style-hidden' },
 			{ className: 'is-style-hidden test3' },
-		].forEach( attributes => {
-			global.wp.data.dispatch( 'core/block-editor' ).insertBlocks(
-				global.wp.blocks.createBlock( 'core/paragraph', attributes ),
+		].forEach(attributes => {
+			global.wp.data.dispatch('core/block-editor').insertBlocks(
+				global.wp.blocks.createBlock('core/paragraph', attributes),
 			);
-		} );
+		});
 	},
-} );
+});
