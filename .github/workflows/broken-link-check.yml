@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: -25 -13 -24 * *
+    - cron: 5 17 22 * *
   repository_dispatch:
     types: [check-link]
 
