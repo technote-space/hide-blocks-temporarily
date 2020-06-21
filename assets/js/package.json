@@ -25,7 +25,7 @@
     "@babel/plugin-transform-react-jsx": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "@technote-space/gutenberg-test-helper": "^0.0.15",
-    "@technote-space/gutenberg-utils": "^2.1.10",
+    "@technote-space/gutenberg-utils": "^2.2.1",
     "@wordpress/block-editor": "^4.1.0",
     "@wordpress/blocks": "^6.18.0",
     "@wordpress/components": "^9.8.0",
