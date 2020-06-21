@@ -4,11 +4,11 @@ import { dispatch, select } from '@wordpress/data';
  * remove hidden class
  */
 export const removeHiddenClassFromBlocks = () => {
-	getHasClassNameBlocks().forEach(block => dispatch('core/block-editor').updateBlock(block.clientId, {
-		attributes: {
-			className: removeHiddenClass(block.attributes.className),
-		},
-	}));
+  getHasClassNameBlocks().forEach(block => dispatch('core/block-editor').updateBlock(block.clientId, {
+    attributes: {
+      className: removeHiddenClass(block.attributes.className),
+    },
+  }));
 };
 
 /**
@@ -21,7 +21,7 @@ const hasClassName = block => block.attributes && block.attributes.className;
  * @returns {array} filtered blocks
  */
 const getHasClassNameBlocks = () => select('core/block-editor').getBlocks().filter(block => {
-	return hasClassName(block);
+  return hasClassName(block);
 });
 
 /**
