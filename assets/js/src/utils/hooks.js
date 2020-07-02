@@ -5,5 +5,5 @@ import { PLUGIN_NAME } from '../constant';
  * @returns {string} namespace
  */
 export function getNamespace(name) {
-	return PLUGIN_NAME + '/' + name;
+  return PLUGIN_NAME + '/' + name;
 }

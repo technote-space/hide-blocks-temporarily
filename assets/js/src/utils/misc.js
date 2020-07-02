@@ -5,5 +5,5 @@ import { isReusableBlock } from '@wordpress/blocks';
  * @returns {boolean} start or not
  */
 export function isTargetBlockType(blockOrType) {
-	return !!(blockOrType && blockOrType.name) && !isReusableBlock(blockOrType) && 'core/template' !== blockOrType.name && !!(blockOrType.attributes && blockOrType.attributes.className);
+  return !!(blockOrType && blockOrType.name) && !isReusableBlock(blockOrType) && 'core/template' !== blockOrType.name && !!(blockOrType.attributes && blockOrType.attributes.className);
 }

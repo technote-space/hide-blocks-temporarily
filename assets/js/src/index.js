@@ -16,43 +16,43 @@ const { getTranslator } = Helpers;
 const translate         = getTranslator(hbtParams);
 
 addFilter(
-	'editor.BlockEdit',
-	getNamespace('register-hide-block-style'),
-	createHigherOrderComponent(BlockEdit => props => {
-		if (!isTargetBlockType(select('core/blocks').getBlockType(props.name))) {
-			return <BlockEdit {...props}/>;
-		}
+  'editor.BlockEdit',
+  getNamespace('register-hide-block-style'),
+  createHigherOrderComponent(BlockEdit => props => {
+    if (!isTargetBlockType(select('core/blocks').getBlockType(props.name))) {
+      return <BlockEdit {...props}/>;
+    }
 
-		const toggle = () => {
-			const { attributes, setAttributes } = props;
-			setAttributes({ className: toggleHiddenClass(attributes.className) });
-		};
-		return <Fragment>
-			<BlockEdit {...props}/>
-			<InspectorControls>
-				<PanelBody title={translate('Hidden')}>
-					<ToggleControl
-						label={translate('Hidden')}
-						checked={hasHiddenClass(props.attributes.className)}
-						onChange={toggle}
-					/>
-				</PanelBody>
-			</InspectorControls>
-		</Fragment>;
-	}, 'addHideBlockComponents'),
+    const toggle = () => {
+      const { attributes, setAttributes } = props;
+      setAttributes({ className: toggleHiddenClass(attributes.className) });
+    };
+    return <Fragment>
+      <BlockEdit {...props}/>
+      <InspectorControls>
+        <PanelBody title={translate('Hidden')}>
+          <ToggleControl
+            label={translate('Hidden')}
+            checked={hasHiddenClass(props.attributes.className)}
+            onChange={toggle}
+          />
+        </PanelBody>
+      </InspectorControls>
+    </Fragment>;
+  }, 'addHideBlockComponents'),
 );
 
 registerPlugin(PLUGIN_NAME, {
-	render: () => {
-		return <PluginMoreMenuItem
-			icon={<Icon
-				icon={PLUGIN_ICON}
-			/>}
-			onClick={() => {
-				removeHiddenClassFromBlocks();
-			}}
-		>
-			{translate('Remove All Hide Styles')}
-		</PluginMoreMenuItem>;
-	},
+  render: () => {
+    return <PluginMoreMenuItem
+      icon={<Icon
+        icon={PLUGIN_ICON}
+      />}
+      onClick={() => {
+        removeHiddenClassFromBlocks();
+      }}
+    >
+      {translate('Remove All Hide Styles')}
+    </PluginMoreMenuItem>;
+  },
 });
