@@ -232,75 +232,23 @@
         },
         {
             "name": "wp-content-framework/cache",
-            "version": "v1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-content-framework/cache.git",
-                "reference": "8c189a2be1346db422f4069bf2461ea42751232c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/cache/zipball/8c189a2be1346db422f4069bf2461ea42751232c",
-                "reference": "8c189a2be1346db422f4069bf2461ea42751232c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
-                "phake/phake": "~2.0",
-                "phpcompatibility/phpcompatibility-wp": "^2.1",
-                "phpmd/phpmd": "^2.8",
-                "phpunit/phpunit": "~5.7",
-                "squizlabs/php_codesniffer": "^3.5",
-                "wp-coding-standards/wpcs": "^2.3"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "technote",
-                    "email": "technote.space@gmail.com",
-                    "homepage": "https://technote.space"
-                }
-            ],
-            "description": "Wordpress content framework",
-            "homepage": "https://github.com/wp-content-framework",
-            "keywords": [
-                "framework",
-                "wordpress"
-            ],
-            "funding": [
-                {
-                    "url": "https://paypal.me/technote0space",
-                    "type": "custom"
-                }
-            ],
-            "time": "2020-06-23T12:19:39+00:00"
-        },
-        {
-            "name": "wp-content-framework/common",
             "version": "v1.0.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-content-framework/common.git",
-                "reference": "bb984b52e2194a52d00ee445ca5f6d66ecded8fc"
+                "url": "https://github.com/wp-content-framework/cache.git",
+                "reference": "503e70f36a1d4ccb7f80a1444734b805191d4446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/common/zipball/bb984b52e2194a52d00ee445ca5f6d66ecded8fc",
-                "reference": "bb984b52e2194a52d00ee445ca5f6d66ecded8fc",
+                "url": "https://api.github.com/repos/wp-content-framework/cache/zipball/503e70f36a1d4ccb7f80a1444734b805191d4446",
+                "reference": "503e70f36a1d4ccb7f80a1444734b805191d4446",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "phake/phake": "~2.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpmd/phpmd": "^2.8",
@@ -332,20 +280,72 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-23T02:01:37+00:00"
+            "time": "2020-07-01T03:56:16+00:00"
         },
         {
-            "name": "wp-content-framework/core",
-            "version": "v1.0.13",
+            "name": "wp-content-framework/common",
+            "version": "v1.0.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-content-framework/core.git",
-                "reference": "8f933c7a7e39d7d68ea225ad4aacced77e249788"
+                "url": "https://github.com/wp-content-framework/common.git",
+                "reference": "cbf71280bac8f62a57f1f5e7d741cbfe974ea540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/core/zipball/8f933c7a7e39d7d68ea225ad4aacced77e249788",
-                "reference": "8f933c7a7e39d7d68ea225ad4aacced77e249788",
+                "url": "https://api.github.com/repos/wp-content-framework/common/zipball/cbf71280bac8f62a57f1f5e7d741cbfe974ea540",
+                "reference": "cbf71280bac8f62a57f1f5e7d741cbfe974ea540",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "phake/phake": "~2.0",
+                "phpcompatibility/phpcompatibility-wp": "^2.1",
+                "phpmd/phpmd": "^2.8",
+                "phpunit/phpunit": "~5.7",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "technote",
+                    "email": "technote.space@gmail.com",
+                    "homepage": "https://technote.space"
+                }
+            ],
+            "description": "Wordpress content framework",
+            "homepage": "https://github.com/wp-content-framework",
+            "keywords": [
+                "framework",
+                "wordpress"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/technote0space",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-07-01T03:56:11+00:00"
+        },
+        {
+            "name": "wp-content-framework/core",
+            "version": "v1.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-content-framework/core.git",
+                "reference": "151d7985339e14b1d7fb22186e5c95ed5ecf50f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-content-framework/core/zipball/151d7985339e14b1d7fb22186e5c95ed5ecf50f2",
+                "reference": "151d7985339e14b1d7fb22186e5c95ed5ecf50f2",
                 "shasum": ""
             },
             "require": {
@@ -391,28 +391,28 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-27T15:12:44+00:00"
+            "time": "2020-07-04T14:38:59+00:00"
         },
         {
             "name": "wp-content-framework/editor",
-            "version": "v1.0.13",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/editor.git",
-                "reference": "d40bb57fb6aa64cf4091c9418e251f31cb9a4721"
+                "reference": "b3ccc4efe8447dec16d822112519a2725b4e4283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/d40bb57fb6aa64cf4091c9418e251f31cb9a4721",
-                "reference": "d40bb57fb6aa64cf4091c9418e251f31cb9a4721",
+                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/b3ccc4efe8447dec16d822112519a2725b4e4283",
+                "reference": "b3ccc4efe8447dec16d822112519a2725b4e4283",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0",
-                "technote/gutenberg-packages": "^0.2.14"
+                "technote/gutenberg-packages": "^0.2.15"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "phake/phake": "~2.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpmd/phpmd": "^2.8",
@@ -444,20 +444,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-25T18:42:50+00:00"
+            "time": "2020-07-02T02:51:58+00:00"
         },
         {
             "name": "wp-content-framework/presenter",
-            "version": "v1.0.11",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/presenter.git",
-                "reference": "c1e1538565d12e21c5b173633c1f4064d9f51d0d"
+                "reference": "ab26ae3b694d8e58be14646b53931ae31cbfdb79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/c1e1538565d12e21c5b173633c1f4064d9f51d0d",
-                "reference": "c1e1538565d12e21c5b173633c1f4064d9f51d0d",
+                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/ab26ae3b694d8e58be14646b53931ae31cbfdb79",
+                "reference": "ab26ae3b694d8e58be14646b53931ae31cbfdb79",
                 "shasum": ""
             },
             "require": {
@@ -465,7 +465,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpmd/phpmd": "^2.8",
                 "squizlabs/php_codesniffer": "^3.5",
@@ -495,20 +495,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-23T16:37:49+00:00"
+            "time": "2020-07-01T03:56:06+00:00"
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.12",
+            "version": "v1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "cd4a21b06d2b8c3ea60b34339e16d1b9db2f024b"
+                "reference": "20d16a9452bb06824af7a53c05a55da28940064b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/cd4a21b06d2b8c3ea60b34339e16d1b9db2f024b",
-                "reference": "cd4a21b06d2b8c3ea60b34339e16d1b9db2f024b",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/20d16a9452bb06824af7a53c05a55da28940064b",
+                "reference": "20d16a9452bb06824af7a53c05a55da28940064b",
                 "shasum": ""
             },
             "require": {
@@ -546,20 +546,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-27T15:12:41+00:00"
+            "time": "2020-07-04T05:33:52+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
-            "version": "v1.0.9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update_check.git",
-                "reference": "64f5a892c735c74845fbac61f093fa34a38ee372"
+                "reference": "7ccbf70243dec4321c1e49d9dc86a71b3e16d517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/64f5a892c735c74845fbac61f093fa34a38ee372",
-                "reference": "64f5a892c735c74845fbac61f093fa34a38ee372",
+                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/7ccbf70243dec4321c1e49d9dc86a71b3e16d517",
+                "reference": "7ccbf70243dec4321c1e49d9dc86a71b3e16d517",
                 "shasum": ""
             },
             "require": {
@@ -567,7 +567,7 @@
                 "yahnis-elsts/plugin-update-checker": "^4.9"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpmd/phpmd": "^2.8",
                 "squizlabs/php_codesniffer": "^3.5",
@@ -597,7 +597,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-06-23T02:37:34+00:00"
+            "time": "2020-07-01T03:56:20+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
@@ -1855,12 +1855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "6d2e5ab854782830911ddd33b7d4649b9f18c10f"
+                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6d2e5ab854782830911ddd33b7d4649b9f18c10f",
-                "reference": "6d2e5ab854782830911ddd33b7d4649b9f18c10f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
+                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
                 "shasum": ""
             },
             "conflict": {
@@ -1954,8 +1954,9 @@
                 "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.2-p.2",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
+                "nystudio107/craft-seomatic": "<3.3",
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
-                "october/october": ">=1.0.319,<1.0.466",
+                "october/october": ">=1.0.319,<1.0.467",
                 "onelogin/php-saml": "<2.10.4",
                 "oneup/uploader-bundle": "<1.9.3|>=2,<2.1.5",
                 "openid/php-openid": "<2.3",
@@ -2132,7 +2133,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-19T13:23:43+00:00"
+            "time": "2020-07-03T16:50:03+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
