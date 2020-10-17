@@ -395,16 +395,16 @@
         },
         {
             "name": "wp-content-framework/editor",
-            "version": "v1.0.27",
+            "version": "v1.0.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/editor.git",
-                "reference": "01cb4ebb1ee23363af6adf65e479d1f110a4cf9e"
+                "reference": "e7a0e6fec976b3ae01281d5a4a65f603a40506a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/01cb4ebb1ee23363af6adf65e479d1f110a4cf9e",
-                "reference": "01cb4ebb1ee23363af6adf65e479d1f110a4cf9e",
+                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/e7a0e6fec976b3ae01281d5a4a65f603a40506a3",
+                "reference": "e7a0e6fec976b3ae01281d5a4a65f603a40506a3",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-03T07:08:28+00:00"
+            "time": "2020-10-11T16:42:33+00:00"
         },
         {
             "name": "wp-content-framework/presenter",
@@ -499,16 +499,16 @@
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.26",
+            "version": "v1.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "4a38b929d1179e6b01978840935469caecb61596"
+                "reference": "10662d0c6097f5ddf6b9630be69d4dbf0735afad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/4a38b929d1179e6b01978840935469caecb61596",
-                "reference": "4a38b929d1179e6b01978840935469caecb61596",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/10662d0c6097f5ddf6b9630be69d4dbf0735afad",
+                "reference": "10662d0c6097f5ddf6b9630be69d4dbf0735afad",
                 "shasum": ""
             },
             "require": {
@@ -546,7 +546,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-03T07:07:36+00:00"
+            "time": "2020-10-11T16:42:22+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
