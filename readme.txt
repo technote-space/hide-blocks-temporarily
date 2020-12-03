@@ -17,7 +17,6 @@ This plugin makes it easy to hides blocks temporarily.
 [日本語の説明](https://technote.space/hide-blocks-temporarily "Documentation in Japanese")
 [GitHub (More details)](https://github.com/technote-space/hide-blocks-temporarily)
 [Issues (Reporting a new bug or feature request)](https://github.com/technote-space/hide-blocks-temporarily/issues)
-[Demonstration](https://technote-space.github.io/hide-blocks-temporarily)
 
 This plugin needs PHP5.6 or higher.
 
