@@ -1,6 +1,5 @@
 const SpeedMeasurePlugin            = require('speed-measure-webpack-plugin');
 const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
-const HardSource                    = require('hard-source-webpack-plugin');
 const smp                           = new SpeedMeasurePlugin();
 const webpack                       = require('webpack');
 const pkg                           = require('./package');
@@ -17,6 +16,9 @@ const externals = {
   '@wordpress/element': 'window.wp.element',
   '@wordpress/hooks': 'window.wp.hooks',
   '@wordpress/plugins': 'window.wp.plugins',
+  '@wordpress/i18n': 'window.wp.i18n',
+  '@wordpress/rich-text': 'window.wp.richText',
+  '@wordpress/url': 'window.wp.url',
   lodash: 'lodash',
 };
 
@@ -32,7 +34,7 @@ const webpackConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader?cacheDirectory',
+        loader: 'babel-loader',
       },
     ],
   },
@@ -40,7 +42,6 @@ const webpackConfig = {
   plugins: [
     new webpack.BannerPlugin(banner),
     new DuplicatePackageCheckerPlugin(),
-    new HardSource(),
   ],
 };
 

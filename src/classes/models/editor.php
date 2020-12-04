@@ -26,7 +26,7 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	use Singleton, Hook, Presenter, Package;
 
 	/**
-	 * @var string $called_filter
+	 * @var string|null $called_filter
 	 */
 	private $called_filter = null;
 

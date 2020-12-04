@@ -13,8 +13,6 @@
 
 このプラグインはブロックを一時的に隠すのを容易にします。  
 
-[デモ](https://technote-space.github.io/hide-blocks-temporarily)
-
 [最新バージョン](https://github.com/technote-space/hide-blocks-temporarily/releases/latest/download/release.zip)
 
 ## Table of Contents
