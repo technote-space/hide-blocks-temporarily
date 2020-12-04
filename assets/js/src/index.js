@@ -13,6 +13,7 @@ import { getNamespace, toggleHiddenClass, hasHiddenClass, removeHiddenClassFromB
 
 const { Icon }          = Components;
 const { getTranslator } = Helpers;
+/** @var {object} hbtParams */
 const translate         = getTranslator(hbtParams);
 
 addFilter(

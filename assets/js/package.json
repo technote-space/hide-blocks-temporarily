@@ -1,6 +1,6 @@
 {
   "name": "hide-blocks-temporarily",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "This plugin makes it easy to hides blocks temporarily.",
   "scripts": {
     "start": "yarn build",
@@ -25,7 +25,7 @@
     "@babel/plugin-transform-react-jsx": "^7.12.7",
     "@babel/preset-env": "^7.12.7",
     "@technote-space/gutenberg-test-helper": "^0.1.4",
-    "@technote-space/gutenberg-utils": "^2.2.22",
+    "@technote-space/gutenberg-utils": "^2.3.0",
     "@wordpress/block-editor": "^5.1.5",
     "@wordpress/blocks": "^6.24.2",
     "@wordpress/components": "^11.1.3",
