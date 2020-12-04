@@ -1310,10 +1310,10 @@
     react-autosize-textarea "^7.1.0"
     react-dom "16.14.0"
 
-"@technote-space/gutenberg-utils@^2.2.22":
-  version "2.2.22"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.2.22.tgz#756b78b0648f1ced587b391646c3f69f684c742a"
-  integrity sha512-s/HgY+ytMpcDwDzOLNgI1EgctXZnziBW30umPLA3RC/gg36orFuv1wijQ6A1TorrBFfA9C0jlUc+vby8yntxbA==
+"@technote-space/gutenberg-utils@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.3.0.tgz#76b9427ae3abc6d834a480fd582b2fc5b1a96223"
+  integrity sha512-pcad+jcUcXqePURGcEjSBNieuLw6TpN1Uo0kKhzd12avNMKX/1mCXmcxc6YSNXdmnHNzBMxTIExqKom56nYM9g==
   dependencies:
     classnames "^2.2.6"
     nano-css "^5.3.0"
@@ -2827,9 +2827,9 @@ camelize@^1.0.0:
   integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
 
 caniuse-lite@^1.0.30001164:
-  version "1.0.30001164"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001164.tgz#5bbfd64ca605d43132f13cc7fdabb17c3036bfdc"
-  integrity sha512-G+A/tkf4bu0dSp9+duNiXc7bGds35DioCyC6vgK2m/rjA4Krpy5WeZgZyfH2f0wj2kI6yAWWucyap6oOwmY1mg==
+  version "1.0.30001165"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001165.tgz#32955490d2f60290bb186bb754f2981917fa744f"
+  integrity sha512-8cEsSMwXfx7lWSUMA2s08z9dIgsnR5NAqjXP23stdsU3AUWkCr/rr4s4OFtHXn5XXr6+7kam3QFVoYyXNPdJPA==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -5605,9 +5605,9 @@ natural-compare@^1.4.0:
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
 nearley@^2.7.10:
-  version "2.19.9"
-  resolved "https://registry.yarnpkg.com/nearley/-/nearley-2.19.9.tgz#a6a06362025be043d3b06bca65355c75af45dc4e"
-  integrity sha512-KpCXvcVWPmZrEs95tIkqWi+CgL48O8CJDVDgY/AQGWXR1O8KQPHt5iQrTLior0k0v3PGKIV2xPi879wR1sawwg==
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/nearley/-/nearley-2.20.0.tgz#4fcc4046aa980614594f5ab47ed6c9307283405b"
+  integrity sha512-Ufhpu2Lrhbh7/InRnQmlgol/L4inT0ZCIh84xKb84zGZyw6PH/VeST3A7vRQTHuHmJHRBj4bw4ujEfJ4bprOig==
   dependencies:
     commander "^2.19.0"
     moo "^0.5.0"
@@ -7240,9 +7240,9 @@ tannin@^1.2.0:
     "@tannin/plural-forms" "^1.1.0"
 
 tapable@^2.0.0, tapable@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.1.1.tgz#b01cc1902d42a7bb30514e320ce21c456f72fd3f"
-  integrity sha512-Wib1S8m2wdpLbmQz0RBEVosIyvb/ykfKXf3ZIDqvWoMg/zTNm6G/tDSuUM61J1kNCDXWJrLHGSFeMhAG+gAGpQ==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.0.tgz#5c373d281d9c672848213d0e037d1c4165ab426b"
+  integrity sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
 
 terminal-link@^2.0.0:
   version "2.1.1"
