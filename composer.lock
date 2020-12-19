@@ -174,21 +174,21 @@
         },
         {
             "name": "technote/gutenberg-packages",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/technote-space/gutenberg-packages.git",
-                "reference": "aeb3935a11333b98a7081327d4d64500a5e171ab"
+                "reference": "0a13e6d508275059b06a24feb3a7e497c3d4fc0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/technote-space/gutenberg-packages/zipball/aeb3935a11333b98a7081327d4d64500a5e171ab",
-                "reference": "aeb3935a11333b98a7081327d4d64500a5e171ab",
+                "url": "https://api.github.com/repos/technote-space/gutenberg-packages/zipball/0a13e6d508275059b06a24feb3a7e497c3d4fc0e",
+                "reference": "0a13e6d508275059b06a24feb3a7e497c3d4fc0e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6",
-                "technote/gutenberg-package-versions": "^0.2.82"
+                "technote/gutenberg-package-versions": "^0.2.87"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0 || ^0.6.0",
@@ -228,7 +228,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-11-22T09:26:07+00:00"
+            "time": "2020-12-14T07:00:06+00:00"
         },
         {
             "name": "wp-content-framework/cache",
@@ -395,16 +395,16 @@
         },
         {
             "name": "wp-content-framework/editor",
-            "version": "v1.0.34",
+            "version": "v1.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/editor.git",
-                "reference": "35837de631ceb314246ed44b0b0f0be1be6de21d"
+                "reference": "f4b5765514830735c13bfaa630d8fb90913239ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/35837de631ceb314246ed44b0b0f0be1be6de21d",
-                "reference": "35837de631ceb314246ed44b0b0f0be1be6de21d",
+                "url": "https://api.github.com/repos/wp-content-framework/editor/zipball/f4b5765514830735c13bfaa630d8fb90913239ba",
+                "reference": "f4b5765514830735c13bfaa630d8fb90913239ba",
                 "shasum": ""
             },
             "require": {
@@ -444,20 +444,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-12-10T00:49:53+00:00"
+            "time": "2020-12-17T06:07:32+00:00"
         },
         {
             "name": "wp-content-framework/presenter",
-            "version": "v1.0.26",
+            "version": "v1.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/presenter.git",
-                "reference": "4e78874d143cca4cb031920596e97a6f6bc1908c"
+                "reference": "b13deddc61a6b10edbee3a43390d917ee8dbfcbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/4e78874d143cca4cb031920596e97a6f6bc1908c",
-                "reference": "4e78874d143cca4cb031920596e97a6f6bc1908c",
+                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/b13deddc61a6b10edbee3a43390d917ee8dbfcbd",
+                "reference": "b13deddc61a6b10edbee3a43390d917ee8dbfcbd",
                 "shasum": ""
             },
             "require": {
@@ -465,7 +465,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpmd/phpmd": "^2.9",
                 "squizlabs/php_codesniffer": "^3.5",
@@ -495,7 +495,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-12-07T04:40:52+00:00"
+            "time": "2020-12-14T14:03:10+00:00"
         },
         {
             "name": "wp-content-framework/update",
