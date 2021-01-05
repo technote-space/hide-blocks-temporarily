@@ -1,9 +1,9 @@
 === Hide Blocks Temporarily ===
 Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
-Requires at least: 5.4
+Requires at least: 5.6
 Requires PHP: 5.6
-Tested up to: 5.4
+Tested up to: 5.6
 Stable tag: 2.1.4
 Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
