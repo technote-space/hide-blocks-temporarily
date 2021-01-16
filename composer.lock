@@ -462,16 +462,16 @@
         },
         {
             "name": "wp-content-framework/presenter",
-            "version": "v1.0.29",
+            "version": "v1.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/presenter.git",
-                "reference": "8d96be3b86cabd9582b81ef9c5358429bb04d656"
+                "reference": "7a1c2915cb6c72e67b98ab9b97640f8d5d2ad573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/8d96be3b86cabd9582b81ef9c5358429bb04d656",
-                "reference": "8d96be3b86cabd9582b81ef9c5358429bb04d656",
+                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/7a1c2915cb6c72e67b98ab9b97640f8d5d2ad573",
+                "reference": "7a1c2915cb6c72e67b98ab9b97640f8d5d2ad573",
                 "shasum": ""
             },
             "require": {
@@ -509,20 +509,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-12-28T06:05:40+00:00"
+            "time": "2021-01-11T08:35:12+00:00"
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.38",
+            "version": "v1.0.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "1c67b328b8b037c4cf84f87e62cffe685b39ccbd"
+                "reference": "5447b0cda6ef27598384b216a08d11b3c6a72e93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/1c67b328b8b037c4cf84f87e62cffe685b39ccbd",
-                "reference": "1c67b328b8b037c4cf84f87e62cffe685b39ccbd",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/5447b0cda6ef27598384b216a08d11b3c6a72e93",
+                "reference": "5447b0cda6ef27598384b216a08d11b3c6a72e93",
                 "shasum": ""
             },
             "require": {
@@ -560,20 +560,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-01-09T05:53:51+00:00"
+            "time": "2021-01-16T06:02:46+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
-            "version": "v1.0.26",
+            "version": "v1.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update_check.git",
-                "reference": "bc10b7e38b62c2a19262b7c92caa547401af3a48"
+                "reference": "a83d3f57e4bde1992af393af44905b52d3c3b51a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/bc10b7e38b62c2a19262b7c92caa547401af3a48",
-                "reference": "bc10b7e38b62c2a19262b7c92caa547401af3a48",
+                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/a83d3f57e4bde1992af393af44905b52d3c3b51a",
+                "reference": "a83d3f57e4bde1992af393af44905b52d3c3b51a",
                 "shasum": ""
             },
             "require": {
@@ -611,7 +611,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-12-23T04:25:30+00:00"
+            "time": "2021-01-13T04:00:04+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
@@ -1878,12 +1878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a2c04f857299a7119e96448249a9dd5954e099c1"
+                "reference": "14c6b604f3a3d3ec218e490ce2176d5f380557bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a2c04f857299a7119e96448249a9dd5954e099c1",
-                "reference": "a2c04f857299a7119e96448249a9dd5954e099c1",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/14c6b604f3a3d3ec218e490ce2176d5f380557bd",
+                "reference": "14c6b604f3a3d3ec218e490ce2176d5f380557bd",
                 "shasum": ""
             },
             "conflict": {
@@ -1965,7 +1965,7 @@
                 "guzzlehttp/guzzle": ">=4-rc.2,<4.2.4|>=5,<5.3.1|>=6,<6.2.1",
                 "illuminate/auth": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.10",
                 "illuminate/cookie": ">=4,<=4.0.11|>=4.1,<=4.1.99999|>=4.2,<=4.2.99999|>=5,<=5.0.99999|>=5.1,<=5.1.99999|>=5.2,<=5.2.99999|>=5.3,<=5.3.99999|>=5.4,<=5.4.99999|>=5.5,<=5.5.49|>=5.6,<=5.6.99999|>=5.7,<=5.7.99999|>=5.8,<=5.8.99999|>=6,<6.18.31|>=7,<7.22.4",
-                "illuminate/database": ">=4,<4.0.99|>=4.1,<4.1.29|>=5.5,<=5.5.44|>=6,<6.18.34|>=7,<7.23.2",
+                "illuminate/database": ">=4,<4.0.99|>=4.1,<4.1.29|>=5.5,<=5.5.44|>=6,<6.20.11|>=7,<7.30.2|>=8,<8.22.1",
                 "illuminate/encryption": ">=4,<=4.0.11|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.40|>=5.6,<5.6.15",
                 "illuminate/view": ">=7,<7.1.2",
                 "ivankristianto/phpwhois": "<=4.3",
@@ -1976,7 +1976,7 @@
                 "kitodo/presentation": "<3.1.2",
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "la-haute-societe/tcpdf": "<6.2.22",
-                "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.99999|>=4.2,<=4.2.99999|>=5,<=5.0.99999|>=5.1,<=5.1.99999|>=5.2,<=5.2.99999|>=5.3,<=5.3.99999|>=5.4,<=5.4.99999|>=5.5,<=5.5.49|>=5.6,<=5.6.99999|>=5.7,<=5.7.99999|>=5.8,<=5.8.99999|>=6,<6.18.34|>=7,<7.23.2",
+                "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.99999|>=4.2,<=4.2.99999|>=5,<=5.0.99999|>=5.1,<=5.1.99999|>=5.2,<=5.2.99999|>=5.3,<=5.3.99999|>=5.4,<=5.4.99999|>=5.5,<=5.5.49|>=5.6,<=5.6.99999|>=5.7,<=5.7.99999|>=5.8,<=5.8.99999|>=6,<6.20.11|>=7,<7.30.2|>=8,<8.22.1",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
                 "librenms/librenms": "<1.53",
@@ -2187,7 +2187,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-31T19:24:22+00:00"
+            "time": "2021-01-16T16:25:01+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
