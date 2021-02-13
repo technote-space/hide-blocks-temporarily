@@ -462,16 +462,16 @@
         },
         {
             "name": "wp-content-framework/presenter",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/presenter.git",
-                "reference": "02c16374fa24190ee733590a47e6df7f01bdc570"
+                "reference": "dbdc509e7089cbe48efa217dd9f72582c874d032"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/02c16374fa24190ee733590a47e6df7f01bdc570",
-                "reference": "02c16374fa24190ee733590a47e6df7f01bdc570",
+                "url": "https://api.github.com/repos/wp-content-framework/presenter/zipball/dbdc509e7089cbe48efa217dd9f72582c874d032",
+                "reference": "dbdc509e7089cbe48efa217dd9f72582c874d032",
                 "shasum": ""
             },
             "require": {
@@ -509,20 +509,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-01T12:50:06+00:00"
+            "time": "2021-02-08T06:44:42+00:00"
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.41",
+            "version": "v1.0.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "076287ee57e8c137778105121beb49b7cf318968"
+                "reference": "a19ff045998b591c12321e042cc03337fbd1d913"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/076287ee57e8c137778105121beb49b7cf318968",
-                "reference": "076287ee57e8c137778105121beb49b7cf318968",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/a19ff045998b591c12321e042cc03337fbd1d913",
+                "reference": "a19ff045998b591c12321e042cc03337fbd1d913",
                 "shasum": ""
             },
             "require": {
@@ -560,20 +560,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-06T07:49:03+00:00"
+            "time": "2021-02-13T06:13:15+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
-            "version": "v1.0.28",
+            "version": "v1.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update_check.git",
-                "reference": "98c1d0fc77991a3c916b66b0b995964675a7c303"
+                "reference": "eb27f738547f9aa5d1b46e16ea51ab53ce49292f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/98c1d0fc77991a3c916b66b0b995964675a7c303",
-                "reference": "98c1d0fc77991a3c916b66b0b995964675a7c303",
+                "url": "https://api.github.com/repos/wp-content-framework/update_check/zipball/eb27f738547f9aa5d1b46e16ea51ab53ce49292f",
+                "reference": "eb27f738547f9aa5d1b46e16ea51ab53ce49292f",
                 "shasum": ""
             },
             "require": {
@@ -611,7 +611,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-03T03:03:22+00:00"
+            "time": "2021-02-10T04:25:06+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
@@ -1878,12 +1878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "f7d723a10c7cb36e11430182f5813ecb1b887da0"
+                "reference": "5f40d4d577a71466f9723122251b46bdaf634709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f7d723a10c7cb36e11430182f5813ecb1b887da0",
-                "reference": "f7d723a10c7cb36e11430182f5813ecb1b887da0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5f40d4d577a71466f9723122251b46bdaf634709",
+                "reference": "5f40d4d577a71466f9723122251b46bdaf634709",
                 "shasum": ""
             },
             "conflict": {
@@ -2000,7 +2000,7 @@
                 "october/backend": ">=1.0.319,<1.0.470",
                 "october/cms": "= 1.0.469|>=1.0.319,<1.0.469",
                 "october/october": ">=1.0.319,<1.0.466",
-                "october/rain": ">=1.0.319,<1.0.468",
+                "october/rain": "<1.0.472|>=1.1,<1.1.2",
                 "onelogin/php-saml": "<2.10.4",
                 "oneup/uploader-bundle": "<1.9.3|>=2,<2.1.5",
                 "openid/php-openid": "<2.3",
@@ -2044,7 +2044,7 @@
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
                 "shopware/core": "<=6.3.4",
-                "shopware/platform": "<=6.3.4",
+                "shopware/platform": "<=6.3.5",
                 "shopware/shopware": "<5.6.9",
                 "silverstripe/admin": ">=1.0.3,<1.0.4|>=1.1,<1.1.1",
                 "silverstripe/assets": ">=1,<1.4.7|>=1.5,<1.5.2",
@@ -2191,7 +2191,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-02T10:05:32+00:00"
+            "time": "2021-02-10T03:02:31+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
