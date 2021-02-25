@@ -1,5 +1,4 @@
 node_modules/
 coverage/
-*.min.js
-*.min.js.LICENSE.txt
+*.min.js*
 .eslintcache
