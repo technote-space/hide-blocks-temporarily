@@ -131,16 +131,16 @@
         },
         {
             "name": "technote/gutenberg-package-versions",
-            "version": "v0.3.34",
+            "version": "v0.3.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/technote-space/gutenberg-package-versions.git",
-                "reference": "bb59766f26e1008aa8cd7e3f8c5bb334509bf57b"
+                "reference": "7d5fdcd4b5aa99dcad174096f6b1f88a98e985fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/technote-space/gutenberg-package-versions/zipball/bb59766f26e1008aa8cd7e3f8c5bb334509bf57b",
-                "reference": "bb59766f26e1008aa8cd7e3f8c5bb334509bf57b",
+                "url": "https://api.github.com/repos/technote-space/gutenberg-package-versions/zipball/7d5fdcd4b5aa99dcad174096f6b1f88a98e985fd",
+                "reference": "7d5fdcd4b5aa99dcad174096f6b1f88a98e985fd",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-24T20:42:39+00:00"
+            "time": "2021-03-05T20:47:36+00:00"
         },
         {
             "name": "technote/gutenberg-packages",
@@ -513,16 +513,16 @@
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.44",
+            "version": "v1.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "4fe58cae1504b14f572a04388eedff80548acbb9"
+                "reference": "17df58dbb107f36cf2950a4c98079ba07483de69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/4fe58cae1504b14f572a04388eedff80548acbb9",
-                "reference": "4fe58cae1504b14f572a04388eedff80548acbb9",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/17df58dbb107f36cf2950a4c98079ba07483de69",
+                "reference": "17df58dbb107f36cf2950a4c98079ba07483de69",
                 "shasum": ""
             },
             "require": {
@@ -560,7 +560,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-27T14:24:04+00:00"
+            "time": "2021-03-06T09:10:46+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
@@ -1878,12 +1878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a6bfc5a1416f0dde1f53b7737b2cf983352737b8"
+                "reference": "0745f820eed6cb92603ca44a9c137ff8ce315e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a6bfc5a1416f0dde1f53b7737b2cf983352737b8",
-                "reference": "a6bfc5a1416f0dde1f53b7737b2cf983352737b8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0745f820eed6cb92603ca44a9c137ff8ce315e86",
+                "reference": "0745f820eed6cb92603ca44a9c137ff8ce315e86",
                 "shasum": ""
             },
             "conflict": {
@@ -1949,6 +1949,7 @@
                 "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
+                "facade/ignition": "<=2.5.1,>=2.0|<=1.16.13",
                 "firebase/php-jwt": "<2",
                 "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
                 "flarum/tags": "<=0.1-beta.13",
@@ -2193,7 +2194,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-26T20:02:39+00:00"
+            "time": "2021-03-03T23:02:20+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
