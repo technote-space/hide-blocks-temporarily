@@ -131,16 +131,16 @@
         },
         {
             "name": "technote/gutenberg-package-versions",
-            "version": "v0.3.39",
+            "version": "v0.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/technote-space/gutenberg-package-versions.git",
-                "reference": "dd3db729f25c8b764c2c0c8e5006da3d74eeaf5a"
+                "reference": "08fc6dc1996c31291eb2cc56bdf88ecf49c8a384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/technote-space/gutenberg-package-versions/zipball/dd3db729f25c8b764c2c0c8e5006da3d74eeaf5a",
-                "reference": "dd3db729f25c8b764c2c0c8e5006da3d74eeaf5a",
+                "url": "https://api.github.com/repos/technote-space/gutenberg-package-versions/zipball/08fc6dc1996c31291eb2cc56bdf88ecf49c8a384",
+                "reference": "08fc6dc1996c31291eb2cc56bdf88ecf49c8a384",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-03-18T20:43:46+00:00"
+            "time": "2021-03-25T20:37:48+00:00"
         },
         {
             "name": "technote/gutenberg-packages",
@@ -513,16 +513,16 @@
         },
         {
             "name": "wp-content-framework/update",
-            "version": "v1.0.47",
+            "version": "v1.0.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-content-framework/update.git",
-                "reference": "e98b9dd62c5919e4f12a80c7f98bbb3203ba2649"
+                "reference": "6e4d8b8ae2a26bd3ba3aa3b5bba2e43b4fd9dcb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/e98b9dd62c5919e4f12a80c7f98bbb3203ba2649",
-                "reference": "e98b9dd62c5919e4f12a80c7f98bbb3203ba2649",
+                "url": "https://api.github.com/repos/wp-content-framework/update/zipball/6e4d8b8ae2a26bd3ba3aa3b5bba2e43b4fd9dcb2",
+                "reference": "6e4d8b8ae2a26bd3ba3aa3b5bba2e43b4fd9dcb2",
                 "shasum": ""
             },
             "require": {
@@ -560,7 +560,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-03-20T09:17:01+00:00"
+            "time": "2021-03-27T06:20:19+00:00"
         },
         {
             "name": "wp-content-framework/update_check",
@@ -663,16 +663,16 @@
     "packages-dev": [
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
                 "shasum": ""
             },
             "require": {
@@ -680,7 +680,8 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -717,7 +718,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-13T08:04:11+00:00"
+            "time": "2021-03-25T17:01:18+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -1878,12 +1879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "11b8a607a59818bb21fc9ffb334f03032a6ce5dc"
+                "reference": "d113d94cd9d8bc7ec35be1179315ed06b21b26c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/11b8a607a59818bb21fc9ffb334f03032a6ce5dc",
-                "reference": "11b8a607a59818bb21fc9ffb334f03032a6ce5dc",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d113d94cd9d8bc7ec35be1179315ed06b21b26c8",
+                "reference": "d113d94cd9d8bc7ec35be1179315ed06b21b26c8",
                 "shasum": ""
             },
             "conflict": {
@@ -1950,7 +1951,7 @@
                 "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
-                "facade/ignition": "<=2.5.1,>=2.0|<=1.16.13",
+                "facade/ignition": "<1.16.14|>=2,<2.4.2|>=2.5,<2.5.2",
                 "firebase/php-jwt": "<2",
                 "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
                 "flarum/tags": "<=0.1-beta.13",
@@ -2123,7 +2124,9 @@
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.38|>=2,<2.7",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.38|>=9,<9.5.25|>=10,<10.4.14|>=11,<11.1.1",
-                "typo3/cms-core": ">=8,<8.7.38|>=9,<9.5.25|>=10,<10.4.14|>=11,<11.1.1",
+                "typo3/cms-backend": ">=7,<=7.6.50|>=8,<=8.7.39|>=9,<=9.5.24|>=10,<=10.4.13|>=11,<=11.1",
+                "typo3/cms-core": ">=6.2,<=6.2.56|>=7,<=7.6.50|>=8,<=8.7.39|>=9,<9.5.25|>=10,<10.4.14|>=11,<11.1.1",
+                "typo3/cms-form": ">=8,<=8.7.39|>=9,<=9.5.24|>=10,<=10.4.13|>=11,<=11.1",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "typo3/phar-stream-wrapper": ">=1,<2.1.1|>=3,<3.1.1",
@@ -2198,7 +2201,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-19T20:02:32+00:00"
+            "time": "2021-03-26T11:01:20+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
